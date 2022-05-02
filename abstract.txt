@@ -1,8 +1,19 @@
+Summary:
+
 The Ethereum Foundation's Solidity compiler ships with a model checker
 since 2019.  The model checker and its capabilities are described in a
 manuscript submitted to CAV 2022.  This artifact accompanies the
 manuscript and is designed to allow the precise reproduction of the
-results.  The software is distributed as a Docker image.
+results.  For the artifact, the software is distributed as a Docker
+image.
+
+URL: <>
+
+SHA256: Available at submission time
+
+Special requirements: none
+
+Justification for reuseability:
 
 The artifact and the software relevant to the contributions of the
 manuscript are released under the MIT license which allows their reuse
