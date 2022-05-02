@@ -133,20 +133,20 @@ configurations to timeout, the user can run the command above with a smaller
 timeout that still allows for the proof, for example:
 
 ```
-./docker_solcmc_all_solvers experiments/deposit_contract deposit_contract_no_bv.sol DepositContract 40
+./docker_solcmc_all_solvers experiments/deposit_contract deposit_contract_no_bv.sol DepositContract 160
 ```
 
-This run takes about 4 minutes. The expected output of this run with the
+This run takes about 15 minutes. The expected output of this run with the
 solving and time summary can be found at
 `tests/deposit_contract_safe_no_bv_all_solvers.txt`.
 
 An even faster approach is running only that one configuration:
 
 ```
-./docker_solcmc experiments/deposit_contract deposit_contract_no_bv.sol DepositContract 40 eld -horn -abstract:off
+./docker_solcmc experiments/deposit_contract deposit_contract_no_bv.sol DepositContract 160 eld -horn -abstract:off
 ```
 
-This run should take about 40 seconds. The expected output of this run with the
+This run should take about 80 seconds. The expected output of this run with the
 solving and time summary can be found at
 `tests/deposit_contract_safe_no_bv_eld_no_abstraction.txt`.
 
