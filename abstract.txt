@@ -7,10 +7,8 @@ results.  The software is distributed as a Docker image.
 The artifact and the software relevant to the contributions of the
 manuscript are released under the MIT license which allows their reuse
 and repurposing.  As is typical for SMT-based technology, for exact
-reproducibility of the results we ship some librarires (in particular
-Eldarica) in a specific version that is not the most recent.  This
-technicality should be considered a feature, not an indication of the
-library being out-of-date.
+reproducibility of the results we ship some libraries (in particular
+Eldarica) in a specific version that is not the most recent.
 
 Since the model checker is shipped as part of production software, the
 system contained in the artifact can be easily applied to problems
