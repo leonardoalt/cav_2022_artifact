@@ -14,6 +14,5 @@ library being out-of-date.
 
 Since the model checker is shipped as part of production software, the
 system contained in the artifact can be easily applied to problems
-beyond those studied in the paper.  It is also available through a
-variety of distribution means (e.g, npm, and a web interface).
-
+beyond those studied in the paper.  The system is also available through
+the official solidity releases.
