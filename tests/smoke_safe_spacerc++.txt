@@ -1,8 +1,0 @@
-### Running with solver spacerc++
-### Entire output:
-{ errors: [], sources: { fileName: { id: [33m0[39m } } }
-### End output
-
-
-####### Final solving and time report:
-Solver spacerc++ solved in 312.63097900152206ms

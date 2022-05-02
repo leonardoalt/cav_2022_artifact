@@ -20,11 +20,19 @@ $ docker build -f Dockerfile-solcmc . --rm -t leoalt/cav
 # Machine Specification
 
 The machine used for all runs described in this document is a laptop with
-processor 11th Gen Intel Core i7-1165G7 @ 2.80GHz and 32 GB RAM.
+processor 11th Gen Intel Core i7-1165G7 @ 2.80GHz, 32 GB RAM and Arch Linux OS.
 
 Run times might differ due to machine differences. It is especially important
 that the user has 32 GB of RAM for the runs that use Eldarica inside the docker
 image, as it may run out of memory in that setting.
+
+We have been conservative with the timeouts given below, as they are all
+multiplied by a factor of 2 compared to the quickest time they took on the
+reference machine described above.
+In the tests below, if we claim that a certain test should run successfully and
+you get a different output, please increase the timeout. We have noticed that
+especially on Mac OSX these tests take much longer than on the reference
+machine.
 
 # Available Commands
 
@@ -177,10 +185,10 @@ recommend the user to run the following command instead, which uses a smaller
 timeout and still allow for counterexamples from 4 of the 6 configurations:
 
 ```
-$ ./docker_solcmc_all_solvers experiments/ERC777 ERC777Property.sol ERC777Property 420
+$ ./docker_solcmc_all_solvers experiments/ERC777 ERC777Property.sol ERC777Property 900
 ```
 
-It should take about 45 minutes to run. The expected output can be found at
+It should overall take about 1 hour to run. The expected output can be found at
 `tests/erc777_unsafe_all_solvers.txt`, containing the output from the tool
 using each solver, counterexamples from the successful configurations, and
 finally the summary reporting solving status and time.
@@ -188,15 +196,15 @@ finally the summary reporting solving status and time.
 The user can also run each solver individually:
 
 ```
-$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 420 eld -horn
-$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 300 eld -horn -abstract:off
-$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 420 eld -horn -abstract:term
-$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 300 eld -horn -abstract:oct
+$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 900 eld -horn
+$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 900 eld -horn -abstract:off
+$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 900 eld -horn -abstract:term
+$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 900 eld -horn -abstract:oct
 $ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 60 z3 rewriter.pull_cheap_ite=true
 $ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 60 z3 rewriter.pull_cheap_ite=true fp.spacer.q3.use_qgen=true fp.spacer.mbqi=false fp.spacer.ground_pobs=false
 ```
 
-Each run should take about 7 minutes, where the last two are expected to timeout.
+Each run should take about 10 minutes, where the last two are expected to timeout.
 The expected output from each run can be found at `tests/erc777_unsafe_[solver_config].txt.
 
 Safe Case
@@ -214,24 +222,25 @@ following command instead, which uses a smaller timeout and still allow for
 proofs for 4 of the 6 configurations:
 
 ```
-$ ./docker_solcmc_all_solvers experiments/ERC777 ERC777PropertySafe.sol ERC777Property 180
+$ ./docker_solcmc_all_solvers experiments/ERC777 ERC777PropertySafe.sol ERC777Property 600
 ```
 
-It should take about 20 minutes to run. The expected output can be found at
-`tests/erc777_safe_all_solvers.txt`, containing the output from the tool
-using each solver, invariants from the successful configurations, and
-finally the summary reporting solving status and time.
+It should take about 30 minutes to run. The expected output can be found at
+`tests/erc777_safe_all_solvers.txt`, containing the output from the tool using
+each solver, invariants from the successful configurations, and finally the
+summary reporting solving status and time.
 
 The user can also run each solver individually:
 
 ```
-$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 180 eld -horn
-$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 180 eld -horn -abstract:off
-$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 180 eld -horn -abstract:term
-$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 180 eld -horn -abstract:oct
+$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 600 eld -horn
+$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 600 eld -horn -abstract:off
+$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 600 eld -horn -abstract:term
+$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 600 eld -horn -abstract:oct
 $ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 60 z3 rewriter.pull_cheap_ite=true
 $ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 60 z3 rewriter.pull_cheap_ite=true fp.spacer.q3.use_qgen=true fp.spacer.mbqi=false fp.spacer.ground_pobs=false
 ```
 
-Each run should take about 3 minutes, where the last two are expected to timeout.
-The expected output from each run can be found at `tests/erc777_safe_[solver_config].txt.
+Each run should take about 3 minutes, where the last two are expected to
+timeout.  The expected output from each run can be found at
+`tests/erc777_safe_[solver_config].txt.

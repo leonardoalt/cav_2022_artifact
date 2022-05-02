@@ -1,0 +1,186 @@
+### Running with solver eld
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'7737'[39m,
+      formattedMessage: [32m'Warning: Inline assembly may cause SMTChecker to produce spurious warnings (false positives).\n'[39m +
+        [32m'  --> contracts/utils/Address.sol:32:9:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'32 |         assembly {\n'[39m +
+        [32m'   |         ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Inline assembly may cause SMTChecker to produce spurious warnings (false positives).'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'4588'[39m,
+      formattedMessage: [32m'Warning: Assertion checker does not yet implement this type of function call.\n'[39m +
+        [32m'   --> contracts/utils/Address.sol:185:51:\n'[39m +
+        [32m'    |\n'[39m +
+        [32m'185 |         (bool success, bytes memory returndata) = target.delegatecall(data);\n'[39m +
+        [32m'    |                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Assertion checker does not yet implement this type of function call.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'7737'[39m,
+      formattedMessage: [32m'Warning: Inline assembly may cause SMTChecker to produce spurious warnings (false positives).\n'[39m +
+        [32m'   --> contracts/utils/Address.sol:207:17:\n'[39m +
+        [32m'    |\n'[39m +
+        [32m'207 |                 assembly {\n'[39m +
+        [32m'    |                 ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Inline assembly may cause SMTChecker to produce spurious warnings (false positives).'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'Counterexample:\n'[39m +
+        [32m'_ERC1820_REGISTRY = 137743751162352440304869156374792304326613118244, _totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934, _TOKENS_SENDER_INTERFACE_HASH = 0x0, _TOKENS_RECIPIENT_INTERFACE_HASH = 0x0\n'[39m +
+        [32m'recipient = 0x01\n'[39m +
+        [32m'amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n'[39m +
+        [32m' = false\n'[39m +
+        [32m'prevSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n'[39m +
+        [32m'result = true\n'[39m +
+        [32m'postSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n'[39m +
+        [32m'\n'[39m +
+        [32m'Transaction trace:\n'[39m +
+        [32m'ERC777Property.constructor(defaultOperators_, 115792089237316195423570985008687907853269984665640564039457584007913129639935){ msg.sender: 0xfffffffffffffffffffffffffffffffffffffffe }\n'[39m +
+        [32m'State: _ERC1820_REGISTRY = 137743751162352440304869156374792304326613118244, _totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935, _TOKENS_SENDER_INTERFACE_HASH = 0x0, _TOKENS_RECIPIENT_INTERFACE_HASH = 0x0\n'[39m +
+        [32m'ERC777Property.transfer(0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935)\n'[39m +
+        [32m'    ERC777.totalSupply() -- internal call\n'[39m +
+        [32m'    ERC777.transfer(0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935) -- internal call\n'[39m +
+        [32m'        Context._msgSender() -- internal call\n'[39m +
+        [32m'        ERC777._callTokensToSend(0xfffffffffffffffffffffffffffffffffffffffe, 0xfffffffffffffffffffffffffffffffffffffffe, 0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935, userData, operatorData) -- internal call\n'[39m +
+        [32m'            _ERC1820_REGISTRY.getInterfaceImplementer(from, _TOKENS_SENDER_INTERFACE_HASH) -- untrusted external call\n'[39m +
+        [32m'            IERC777Sender(implementer).tokensToSend(operator, from, to, amount, userData, operatorData) -- untrusted external call\n'[39m +
+        [32m'        ERC777._move(0xfffffffffffffffffffffffffffffffffffffffe, 0xfffffffffffffffffffffffffffffffffffffffe, 0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935, userData, operatorData) -- internal call\n'[39m +
+        [32m'            ERC777._beforeTokenTransfer(0xfffffffffffffffffffffffffffffffffffffffe, 0xfffffffffffffffffffffffffffffffffffffffe, 0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935) -- internal call\n'[39m +
+        [32m'        ERC777._callTokensReceived(0xfffffffffffffffffffffffffffffffffffffffe, 0xfffffffffffffffffffffffffffffffffffffffe, 0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935, userData, operatorData, false) -- internal call\n'[39m +
+        [32m'            _ERC1820_REGISTRY.getInterfaceImplementer(to, _TOKENS_RECIPIENT_INTERFACE_HASH) -- untrusted external call\n'[39m +
+        [32m'            IERC777Recipient(implementer).tokensReceived(operator, from, to, amount, userData, operatorData) -- untrusted external call, synthesized as:\n'[39m +
+        [32m'                ERC777.operatorBurn(0x01, 1, data, operatorData) -- reentrant call\n'[39m +
+        [32m'                    Context._msgSender() -- internal call\n'[39m +
+        [32m'                    ERC777.isOperatorFor(0x01, 0x01) -- internal call\n'[39m +
+        [32m'                    ERC777._burn(0x01, 1, data, operatorData) -- internal call\n'[39m +
+        [32m'                        Context._msgSender() -- internal call\n'[39m +
+        [32m'                        ERC777._callTokensToSend(0x01, 0x01, 0x0, 1, userData, operatorData) -- internal call\n'[39m +
+        [32m'                            _ERC1820_REGISTRY.getInterfaceImplementer(from, _TOKENS_SENDER_INTERFACE_HASH) -- untrusted external call\n'[39m +
+        [32m'                        ERC777._beforeTokenTransfer(0x01, 0x01, 0x0, 1) -- internal call\n'[39m +
+        [32m'    ERC777.totalSupply() -- internal call\n'[39m +
+        [32m'  --> fileName:16:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'16 | \t\tassert(prevSupply == postSupply);\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.\n'[39m +
+        [32m'Counterexample:\n'[39m +
+        [32m'_ERC1820_REGISTRY = 137743751162352440304869156374792304326613118244, _totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934, _TOKENS_SENDER_INTERFACE_HASH = 0x0, _TOKENS_RECIPIENT_INTERFACE_HASH = 0x0\n'[39m +
+        [32m'recipient = 0x01\n'[39m +
+        [32m'amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n'[39m +
+        [32m' = false\n'[39m +
+        [32m'prevSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n'[39m +
+        [32m'result = true\n'[39m +
+        [32m'postSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934\n'[39m +
+        [32m'\n'[39m +
+        [32m'Transaction trace:\n'[39m +
+        [32m'ERC777Property.constructor(defaultOperators_, 115792089237316195423570985008687907853269984665640564039457584007913129639935){ msg.sender: 0xfffffffffffffffffffffffffffffffffffffffe }\n'[39m +
+        [32m'State: _ERC1820_REGISTRY = 137743751162352440304869156374792304326613118244, _totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935, _TOKENS_SENDER_INTERFACE_HASH = 0x0, _TOKENS_RECIPIENT_INTERFACE_HASH = 0x0\n'[39m +
+        [32m'ERC777Property.transfer(0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935)\n'[39m +
+        [32m'    ERC777.totalSupply() -- internal call\n'[39m +
+        [32m'    ERC777.transfer(0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935) -- internal call\n'[39m +
+        [32m'        Context._msgSender() -- internal call\n'[39m +
+        [32m'        ERC777._callTokensToSend(0xfffffffffffffffffffffffffffffffffffffffe, 0xfffffffffffffffffffffffffffffffffffffffe, 0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935, userData, operatorData) -- internal call\n'[39m +
+        [32m'            _ERC1820_REGISTRY.getInterfaceImplementer(from, _TOKENS_SENDER_INTERFACE_HASH) -- untrusted external call\n'[39m +
+        [32m'            IERC777Sender(implementer).tokensToSend(operator, from, to, amount, userData, operatorData) -- untrusted external call\n'[39m +
+        [32m'        ERC777._move(0xfffffffffffffffffffffffffffffffffffffffe, 0xfffffffffffffffffffffffffffffffffffffffe, 0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935, userData, operatorData) -- internal call\n'[39m +
+        [32m'            ERC777._beforeTokenTransfer(0xfffffffffffffffffffffffffffffffffffffffe, 0xfffffffffffffffffffffffffffffffffffffffe, 0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935) -- internal call\n'[39m +
+        [32m'        ERC777._callTokensReceived(0xfffffffffffffffffffffffffffffffffffffffe, 0xfffffffffffffffffffffffffffffffffffffffe, 0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935, userData, operatorData, false) -- internal call\n'[39m +
+        [32m'            _ERC1820_REGISTRY.getInterfaceImplementer(to, _TOKENS_RECIPIENT_INTERFACE_HASH) -- untrusted external call\n'[39m +
+        [32m'            IERC777Recipient(implementer).tokensReceived(operator, from, to, amount, userData, operatorData) -- untrusted external call, synthesized as:\n'[39m +
+        [32m'                ERC777.operatorBurn(0x01, 1, data, operatorData) -- reentrant call\n'[39m +
+        [32m'                    Context._msgSender() -- internal call\n'[39m +
+        [32m'                    ERC777.isOperatorFor(0x01, 0x01) -- internal call\n'[39m +
+        [32m'                    ERC777._burn(0x01, 1, data, operatorData) -- internal call\n'[39m +
+        [32m'                        Context._msgSender() -- internal call\n'[39m +
+        [32m'                        ERC777._callTokensToSend(0x01, 0x01, 0x0, 1, userData, operatorData) -- internal call\n'[39m +
+        [32m'                            _ERC1820_REGISTRY.getInterfaceImplementer(from, _TOKENS_SENDER_INTERFACE_HASH) -- untrusted external call\n'[39m +
+        [32m'                        ERC777._beforeTokenTransfer(0x01, 0x01, 0x0, 1) -- internal call\n'[39m +
+        [32m'    ERC777.totalSupply() -- internal call'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: {
+    [32m'contracts/token/ERC20/IERC20.sol'[39m: { id: [33m0[39m },
+    [32m'contracts/token/ERC777/ERC777.sol'[39m: { id: [33m1[39m },
+    [32m'contracts/token/ERC777/IERC777.sol'[39m: { id: [33m2[39m },
+    [32m'contracts/token/ERC777/IERC777Recipient.sol'[39m: { id: [33m3[39m },
+    [32m'contracts/token/ERC777/IERC777Sender.sol'[39m: { id: [33m4[39m },
+    [32m'contracts/utils/Address.sol'[39m: { id: [33m5[39m },
+    [32m'contracts/utils/Context.sol'[39m: { id: [33m6[39m },
+    [32m'contracts/utils/introspection/IERC1820Registry.sol'[39m: { id: [33m7[39m },
+    fileName: { id: [33m8[39m }
+  }
+}
+### End output
+##### Solver eld cex:
+Warning: CHC: Assertion violation happens here.
+Counterexample:
+_ERC1820_REGISTRY = 137743751162352440304869156374792304326613118244, _totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934, _TOKENS_SENDER_INTERFACE_HASH = 0x0, _TOKENS_RECIPIENT_INTERFACE_HASH = 0x0
+recipient = 0x01
+amount = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+ = false
+prevSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+result = true
+postSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639934
+
+Transaction trace:
+ERC777Property.constructor(defaultOperators_, 115792089237316195423570985008687907853269984665640564039457584007913129639935){ msg.sender: 0xfffffffffffffffffffffffffffffffffffffffe }
+State: _ERC1820_REGISTRY = 137743751162352440304869156374792304326613118244, _totalSupply = 115792089237316195423570985008687907853269984665640564039457584007913129639935, _TOKENS_SENDER_INTERFACE_HASH = 0x0, _TOKENS_RECIPIENT_INTERFACE_HASH = 0x0
+ERC777Property.transfer(0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935)
+    ERC777.totalSupply() -- internal call
+    ERC777.transfer(0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935) -- internal call
+        Context._msgSender() -- internal call
+        ERC777._callTokensToSend(0xfffffffffffffffffffffffffffffffffffffffe, 0xfffffffffffffffffffffffffffffffffffffffe, 0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935, userData, operatorData) -- internal call
+            _ERC1820_REGISTRY.getInterfaceImplementer(from, _TOKENS_SENDER_INTERFACE_HASH) -- untrusted external call
+            IERC777Sender(implementer).tokensToSend(operator, from, to, amount, userData, operatorData) -- untrusted external call
+        ERC777._move(0xfffffffffffffffffffffffffffffffffffffffe, 0xfffffffffffffffffffffffffffffffffffffffe, 0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935, userData, operatorData) -- internal call
+            ERC777._beforeTokenTransfer(0xfffffffffffffffffffffffffffffffffffffffe, 0xfffffffffffffffffffffffffffffffffffffffe, 0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935) -- internal call
+        ERC777._callTokensReceived(0xfffffffffffffffffffffffffffffffffffffffe, 0xfffffffffffffffffffffffffffffffffffffffe, 0x01, 115792089237316195423570985008687907853269984665640564039457584007913129639935, userData, operatorData, false) -- internal call
+            _ERC1820_REGISTRY.getInterfaceImplementer(to, _TOKENS_RECIPIENT_INTERFACE_HASH) -- untrusted external call
+            IERC777Recipient(implementer).tokensReceived(operator, from, to, amount, userData, operatorData) -- untrusted external call, synthesized as:
+                ERC777.operatorBurn(0x01, 1, data, operatorData) -- reentrant call
+                    Context._msgSender() -- internal call
+                    ERC777.isOperatorFor(0x01, 0x01) -- internal call
+                    ERC777._burn(0x01, 1, data, operatorData) -- internal call
+                        Context._msgSender() -- internal call
+                        ERC777._callTokensToSend(0x01, 0x01, 0x0, 1, userData, operatorData) -- internal call
+                            _ERC1820_REGISTRY.getInterfaceImplementer(from, _TOKENS_SENDER_INTERFACE_HASH) -- untrusted external call
+                        ERC777._beforeTokenTransfer(0x01, 0x01, 0x0, 1) -- internal call
+    ERC777.totalSupply() -- internal call
+  --> fileName:16:3:
+   |
+16 | 		assert(prevSupply == postSupply);
+   | 		^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+##### End counterexample
+
+
+####### Final solving and time report:
+Solver eld solved in 328454.093808949ms

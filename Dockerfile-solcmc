@@ -41,10 +41,7 @@ RUN cd /home/                                                            \
     && npm install -g ts-node
 
 RUN sed -i 's/const timeout = 10000;/const timeout = 3600000;/g' /home/solc-js/smtsolver.ts
-#RUN sed -i 's/const timeout = 10000;/const timeout = 60000;/g' /home/solc-js/smtsolver.ts
 RUN sed -i 's/rlimit=20000000//g' /home/solc-js/smtsolver.ts
-#RUN sed -i 's/let solverOutput;/console.log(solver); let solverOutput;/g' /home/solc-js/smtsolver.ts
-#RUN sed -i 's/return solverOutput;/console.log(solverOutput); return solverOutput;/g' /home/solc-js/smtsolver.ts
 
 COPY run.ts /home/solc-js/
 COPY run_all_solvers.ts /home/solc-js/
