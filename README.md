@@ -98,7 +98,7 @@ pragma and constructor visibility). Its 0.8.0 version is in
 To run the Deposit Contract experiment with all solvers, please run:
 
 ```
-./docker_solcmc_all_solvers experiments/deposit_contract deposit_contract.sol DepositContract 3600
+$ ./docker_solcmc_all_solvers experiments/deposit_contract deposit_contract.sol DepositContract 3600
 ```
 
 As reported in the paper, all solvers' configurations either timeout or run out
@@ -108,7 +108,7 @@ If the user wants to see the experiment report assuming timeouts, please run
 the following to force quick timeouts:
 
 ```
-./docker_solcmc_all_solvers experiments/deposit_contract deposit_contract.sol DepositContract 1
+$ ./docker_solcmc_all_solvers experiments/deposit_contract deposit_contract.sol DepositContract 1
 ```
 
 Similarly to the smoke example, the output will contain the output from the
@@ -122,7 +122,7 @@ counterpart `if ((node % 2) == 1)`. The new code is in
 To run the modified Deposit Contract experiment with all solvers, please run:
 
 ```
-./docker_solcmc_all_solvers experiments/deposit_contract deposit_contract_no_bv.sol DepositContract 3600
+$ ./docker_solcmc_all_solvers experiments/deposit_contract deposit_contract_no_bv.sol DepositContract 3600
 ```
 
 Also in this case most solver configurations will timeout, so we again
@@ -133,7 +133,7 @@ configurations to timeout, the user can run the command above with a smaller
 timeout that still allows for the proof, for example:
 
 ```
-./docker_solcmc_all_solvers experiments/deposit_contract deposit_contract_no_bv.sol DepositContract 160
+$ ./docker_solcmc_all_solvers experiments/deposit_contract deposit_contract_no_bv.sol DepositContract 160
 ```
 
 This run takes about 15 minutes. The expected output of this run with the
@@ -143,7 +143,7 @@ solving and time summary can be found at
 An even faster approach is running only that one configuration:
 
 ```
-./docker_solcmc experiments/deposit_contract deposit_contract_no_bv.sol DepositContract 160 eld -horn -abstract:off
+$ ./docker_solcmc experiments/deposit_contract deposit_contract_no_bv.sol DepositContract 160 eld -horn -abstract:off
 ```
 
 This run should take about 80 seconds. The expected output of this run with the
@@ -155,3 +155,83 @@ manages to solve it anyway. However, it does not output invariants in this
 case.
 
 ### ERC777 (Sec. B.2)
+
+The code for the ERC777 experiment is in `tests/experiments/ERC777`.  In that
+directory, `contracts` contains the original OpenZeppelin contracts,
+`ERC777Property.sol` is the test harness that uses the original library, and
+`ERC777PropertySafe.sol` is the test harness that uses the new version of the
+library that uses a mutex lock.
+
+Unsafe Case
+===========
+
+To run the first ERC777 experiment with the original library and all solvers,
+please run:
+
+```
+$ ./docker_solcmc_all_solvers experiments/ERC777 ERC777Property.sol ERC777Property 3600
+```
+
+As described in the paper, two of the solvers' configurations timeout. We
+recommend the user to run the following command instead, which uses a smaller
+timeout and still allow for counterexamples from 4 of the 6 configurations:
+
+```
+$ ./docker_solcmc_all_solvers experiments/ERC777 ERC777Property.sol ERC777Property 420
+```
+
+It should take about 45 minutes to run. The expected output can be found at
+`tests/erc777_unsafe_all_solvers.txt`, containing the output from the tool
+using each solver, counterexamples from the successful configurations, and
+finally the summary reporting solving status and time.
+
+The user can also run each solver individually:
+
+```
+$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 420 eld -horn
+$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 300 eld -horn -abstract:off
+$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 420 eld -horn -abstract:term
+$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 300 eld -horn -abstract:oct
+$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 60 z3 rewriter.pull_cheap_ite=true
+$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 60 z3 rewriter.pull_cheap_ite=true fp.spacer.q3.use_qgen=true fp.spacer.mbqi=false fp.spacer.ground_pobs=false
+```
+
+Each run should take about 7 minutes, where the last two are expected to timeout.
+The expected output from each run can be found at `tests/erc777_unsafe_[solver_config].txt.
+
+Safe Case
+===========
+
+Running the experiments for the safe case is pretty much the same, only
+changing the input file and timeout:
+
+```
+$ ./docker_solcmc_all_solvers experiments/ERC777 ERC777Property.sol ERC777Property 3600
+```
+
+As two of the solvers' configurations timeout, we recommend the user to run the
+following command instead, which uses a smaller timeout and still allow for
+proofs for 4 of the 6 configurations:
+
+```
+$ ./docker_solcmc_all_solvers experiments/ERC777 ERC777PropertySafe.sol ERC777Property 180
+```
+
+It should take about 20 minutes to run. The expected output can be found at
+`tests/erc777_safe_all_solvers.txt`, containing the output from the tool
+using each solver, invariants from the successful configurations, and
+finally the summary reporting solving status and time.
+
+The user can also run each solver individually:
+
+```
+$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 180 eld -horn
+$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 180 eld -horn -abstract:off
+$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 180 eld -horn -abstract:term
+$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 180 eld -horn -abstract:oct
+$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 60 z3 rewriter.pull_cheap_ite=true
+$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 60 z3 rewriter.pull_cheap_ite=true fp.spacer.q3.use_qgen=true fp.spacer.mbqi=false fp.spacer.ground_pobs=false
+```
+
+Each run should take about 3 minutes, where the last two are expected to timeout.
+The expected output from each run can be found at `tests/erc777_safe_[solver_config].txt.
