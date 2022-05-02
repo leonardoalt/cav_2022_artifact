@@ -88,7 +88,7 @@ invariants instead of counterexamples.
 The code related to the smart contracts analyzed in the paper can be found in
 the `experiments` directory.
 
-### Deposit Contract
+### Deposit Contract (Sec. B.1)
 
 The [original deposit contract](https://github.com/axic/eth2-deposit-contract/blob/master/deposit_contract.sol)
 was written for Solidity 0.6.0, so it required two small modifications (version
@@ -154,4 +154,4 @@ There are still some implicit uses of BitVectors in the query, but Eldarica
 manages to solve it anyway. However, it does not output invariants in this
 case.
 
-### ERC777
+### ERC777 (Sec. B.2)
