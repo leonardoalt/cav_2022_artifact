@@ -183,4 +183,4 @@ ERC777Property.transfer(0x01, 11579208923731619542357098500868790785326998466564
 
 
 ####### Final solving and time report:
-Solver eld solved in 212921.25002902746ms
+Solver eld solved in 139972.81955301762ms

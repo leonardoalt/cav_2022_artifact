@@ -877,9 +877,11 @@ ERC777Property.transfer(0x01, 11579208923731619542357098500868790785326998466564
 
 
 ####### Final solving and time report:
-Solver Eldarica Vanilla solved in 231191.11800396442ms
-Solver Eldarica No Abstraction solved in 260616.832695961ms
-Solver Eldarica Term Abstraction solved in 393020.4964040518ms
-Solver Eldarica Oct Abstraction solved in 219297.56366497278ms
-Solver Spacer Vanilla did not solve in 5320.824688017368ms
-Solver Spacer Quant did not solve in 5097.852353990078ms
+Solver Eldarica Vanilla solved in 175510.8399400115ms
+Solver Eldarica No Abstraction solved in 140180.3642539978ms
+Solver Eldarica Term Abstraction solved in 185476.67175000906ms
+Solver Eldarica Oct Abstraction solved in 155067.3786250353ms
+Solver Spacer Vanilla did not solve in 3925.4433250427246ms
+Solver Spacer Quant did not solve in 3845.6094269752502ms
+(node:8) [DEP0128] DeprecationWarning: Invalid 'main' field in '/home/solc-js/package.json' of 'index.js'. Please either fix that or report it to the module author
+(Use `node --trace-deprecation ...` to show where the warning was created)
