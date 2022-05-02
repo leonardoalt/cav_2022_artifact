@@ -92,4 +92,4 @@ Reentrancy property(ies) for fileName:ERC777Property:
 
 
 ####### Final solving and time report:
-Solver eld solved in 25052.592823028564ms
+Solver eld solved in 43326.1500159502ms

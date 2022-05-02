@@ -1,0 +1,40 @@
+FROM archlinux:latest
+
+ARG ELDARICA_VERSION
+
+ENV TZ=America/Chicago
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+RUN pacman --noconfirm -Syu --noprogressbar --needed z3 git jre-openjdk-headless curl
+
+# Download nodejs and npm
+
+RUN touch ~/.bashrc
+#RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash \
+#    && source ~/.bashrc \
+#    && nvm install node
+RUN pacman --noconfirm -S --noprogressbar nodejs npm
+
+RUN source ~/.bashrc
+RUN npm --version
+
+# Set up Eldarica
+
+COPY eldarica /home/eldarica
+
+ENV PATH="/home/eldarica:$PATH"
+
+# Download solcjs and ts-node
+
+RUN cd /home/                                                            \
+    && git clone --branch master https://github.com/ethereum/solc-js.git \
+    && cd /home/solc-js/                                                 \
+    && npm install                                                       \
+    && npm install -g ts-node
+
+RUN sed -i 's/const timeout = 10000;/const timeout = 3600000;/g' /home/solc-js/smtsolver.ts
+RUN sed -i 's/rlimit=20000000//g' /home/solc-js/smtsolver.ts
+
+COPY run.ts /home/solc-js/
+COPY run_all_solvers.ts /home/solc-js/
+COPY soljson_cex.js /home/solc-js/soljson.js

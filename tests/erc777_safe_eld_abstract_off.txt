@@ -92,6 +92,4 @@ Reentrancy property(ies) for fileName:ERC777Property:
 
 
 ####### Final solving and time report:
-Solver eld solved in 25475.38640999794ms
-(node:8) [DEP0128] DeprecationWarning: Invalid 'main' field in '/home/solc-js/package.json' of 'index.js'. Please either fix that or report it to the module author
-(Use `node --trace-deprecation ...` to show where the warning was created)
+Solver eld solved in 23033.078992009163ms
