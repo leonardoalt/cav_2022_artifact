@@ -1,0 +1,8 @@
+### Running with solver eld
+### Entire output:
+{ errors: [], sources: { fileName: { id: [33m0[39m } } }
+### End output
+
+
+####### Final solving and time report:
+Solver eld solved in 1550.1972329616547ms

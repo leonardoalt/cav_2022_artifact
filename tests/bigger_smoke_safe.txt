@@ -1,0 +1,125 @@
+### Running with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1180'[39m,
+      formattedMessage: [32m'Info: Contract invariant(s) for fileName:BinaryMachine:\n'[39m +
+        [32m'((x <= 1) && (x >= 0))\n'[39m +
+        [32m'\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Contract invariant(s) for fileName:BinaryMachine:\n'[39m +
+        [32m'((x <= 1) && (x >= 0))\n'[39m,
+      severity: [32m'info'[39m,
+      type: [32m'Info'[39m
+    }
+  ],
+  sources: { fileName: { id: [33m0[39m } }
+}
+### End output
+### Running with solver Eldarica No Abstraction
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1180'[39m,
+      formattedMessage: [32m'Info: Contract invariant(s) for fileName:BinaryMachine:\n'[39m +
+        [32m'((x <= 1) && (x >= 0))\n'[39m +
+        [32m'\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Contract invariant(s) for fileName:BinaryMachine:\n'[39m +
+        [32m'((x <= 1) && (x >= 0))\n'[39m,
+      severity: [32m'info'[39m,
+      type: [32m'Info'[39m
+    }
+  ],
+  sources: { fileName: { id: [33m0[39m } }
+}
+### End output
+### Running with solver Eldarica Term Abstraction
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1180'[39m,
+      formattedMessage: [32m'Info: Contract invariant(s) for fileName:BinaryMachine:\n'[39m +
+        [32m'((x <= 1) && (x >= 0))\n'[39m +
+        [32m'\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Contract invariant(s) for fileName:BinaryMachine:\n'[39m +
+        [32m'((x <= 1) && (x >= 0))\n'[39m,
+      severity: [32m'info'[39m,
+      type: [32m'Info'[39m
+    }
+  ],
+  sources: { fileName: { id: [33m0[39m } }
+}
+### End output
+### Running with solver Eldarica Oct Abstraction
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1180'[39m,
+      formattedMessage: [32m'Info: Contract invariant(s) for fileName:BinaryMachine:\n'[39m +
+        [32m'((x <= 1) && (x >= 0))\n'[39m +
+        [32m'\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Contract invariant(s) for fileName:BinaryMachine:\n'[39m +
+        [32m'((x <= 1) && (x >= 0))\n'[39m,
+      severity: [32m'info'[39m,
+      type: [32m'Info'[39m
+    }
+  ],
+  sources: { fileName: { id: [33m0[39m } }
+}
+### End output
+### Running with solver Spacer Vanilla
+### Entire output:
+{ errors: [], sources: { fileName: { id: [33m0[39m } } }
+### End output
+### Running with solver Spacer Quant
+### Entire output:
+{ errors: [], sources: { fileName: { id: [33m0[39m } } }
+### End output
+##### Solver Eldarica Vanilla invariants:
+Info: Contract invariant(s) for fileName:BinaryMachine:
+((x <= 1) && (x >= 0))
+
+
+
+##### End invariants
+##### Solver Eldarica No Abstraction invariants:
+Info: Contract invariant(s) for fileName:BinaryMachine:
+((x <= 1) && (x >= 0))
+
+
+
+##### End invariants
+##### Solver Eldarica Term Abstraction invariants:
+Info: Contract invariant(s) for fileName:BinaryMachine:
+((x <= 1) && (x >= 0))
+
+
+
+##### End invariants
+##### Solver Eldarica Oct Abstraction invariants:
+Info: Contract invariant(s) for fileName:BinaryMachine:
+((x <= 1) && (x >= 0))
+
+
+
+##### End invariants
+
+
+####### Final solving and time report:
+Solver Eldarica Vanilla solved in 3318.8799760341644ms
+Solver Eldarica No Abstraction solved in 3703.673977971077ms
+Solver Eldarica Term Abstraction solved in 2706.463166952133ms
+Solver Eldarica Oct Abstraction solved in 1974.499431014061ms
+Solver Spacer Vanilla solved in 81.62605601549149ms
+Solver Spacer Quant solved in 68.22137004137039ms

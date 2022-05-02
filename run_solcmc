@@ -1,0 +1,5 @@
+dir=`pwd`
+dir="$dir/$1"
+shift
+cd /home/solc-js/
+ts-node run.ts "$dir" $@

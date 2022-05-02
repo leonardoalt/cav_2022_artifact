@@ -1,0 +1,8 @@
+### Running with solver z3
+### Entire output:
+{ errors: [], sources: { fileName: { id: [33m0[39m } } }
+### End output
+
+
+####### Final solving and time report:
+Solver z3 solved in 71.75192499160767ms

@@ -1,0 +1,35 @@
+### Running with solver z3
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> fileName:3:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'3 | \t\tassert(x > 0);\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { fileName: { id: [33m0[39m } }
+}
+### End output
+##### Solver z3 cex:
+Warning: CHC: Assertion violation happens here.
+ --> fileName:3:3:
+  |
+3 | 		assert(x > 0);
+  | 		^^^^^^^^^^^^^
+
+
+##### End counterexample
+
+
+####### Final solving and time report:
+Solver z3 solved in 106.43466502428055ms
