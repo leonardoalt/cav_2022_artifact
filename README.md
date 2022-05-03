@@ -120,7 +120,9 @@ $ ./docker_solcmc_all_solvers experiments/deposit_contract deposit_contract.sol 
 ```
 
 Similarly to the smoke example, the output will contain the output from the
-tool using each solver, plus a summary of solving and time at the end.
+tool using each solver, plus a summary of solving and time at the end.  Note
+that this time no solver was able to solve the query, which is reflected in the
+summary at the end of `tests/deposit_contract_bv_all_solvers_timeout.txt`.
 
 In order to remove the main BitVector reasoning from the contract, we replaced
 two instances of the parity test `if ((node & 1) == 1)` by its arithmetic
@@ -170,8 +172,7 @@ directory, `contracts` contains the original OpenZeppelin contracts,
 `ERC777PropertySafe.sol` is the test harness that uses the new version of the
 library that uses a mutex lock.
 
-Unsafe Case
-===========
+#### Unsafe Case
 
 To run the first ERC777 experiment with the original library and all solvers,
 please run:
@@ -207,8 +208,7 @@ $ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 60 z3 rew
 Each run should take about 10 minutes, where the last two are expected to timeout.
 The expected output from each run can be found at `tests/erc777_unsafe_[solver_config].txt.
 
-Safe Case
-===========
+#### Safe Case
 
 Running the experiments for the safe case is pretty much the same, only
 changing the input file and timeout:

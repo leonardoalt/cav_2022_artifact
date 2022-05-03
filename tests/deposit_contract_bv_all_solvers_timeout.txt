@@ -1,0 +1,141 @@
+### Running with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation might happen here.\n'[39m +
+        [32m'   --> fileName:158:9:\n'[39m +
+        [32m'    |\n'[39m +
+        [32m'158 |         assert(false);\n'[39m +
+        [32m'    |         ^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation might happen here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { fileName: { id: [33m0[39m } }
+}
+### End output
+### Running with solver Eldarica No Abstraction
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation might happen here.\n'[39m +
+        [32m'   --> fileName:158:9:\n'[39m +
+        [32m'    |\n'[39m +
+        [32m'158 |         assert(false);\n'[39m +
+        [32m'    |         ^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation might happen here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { fileName: { id: [33m0[39m } }
+}
+### End output
+### Running with solver Eldarica Term Abstraction
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation might happen here.\n'[39m +
+        [32m'   --> fileName:158:9:\n'[39m +
+        [32m'    |\n'[39m +
+        [32m'158 |         assert(false);\n'[39m +
+        [32m'    |         ^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation might happen here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { fileName: { id: [33m0[39m } }
+}
+### End output
+### Running with solver Eldarica Oct Abstraction
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation might happen here.\n'[39m +
+        [32m'   --> fileName:158:9:\n'[39m +
+        [32m'    |\n'[39m +
+        [32m'158 |         assert(false);\n'[39m +
+        [32m'    |         ^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation might happen here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { fileName: { id: [33m0[39m } }
+}
+### End output
+### Running with solver Spacer Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation might happen here.\n'[39m +
+        [32m'   --> fileName:158:9:\n'[39m +
+        [32m'    |\n'[39m +
+        [32m'158 |         assert(false);\n'[39m +
+        [32m'    |         ^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation might happen here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { fileName: { id: [33m0[39m } }
+}
+### End output
+### Running with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation might happen here.\n'[39m +
+        [32m'   --> fileName:158:9:\n'[39m +
+        [32m'    |\n'[39m +
+        [32m'158 |         assert(false);\n'[39m +
+        [32m'    |         ^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation might happen here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { fileName: { id: [33m0[39m } }
+}
+### End output
+
+
+####### Final solving and time report:
+Solver Eldarica Vanilla did not solve in 2943.4014449715614ms
+Solver Eldarica No Abstraction did not solve in 3063.1852279901505ms
+Solver Eldarica Term Abstraction did not solve in 2113.2362480163574ms
+Solver Eldarica Oct Abstraction did not solve in 2131.373314976692ms
+Solver Spacer Vanilla did not solve in 1361.2060840129852ms
+Solver Spacer Quant did not solve in 1359.8575530052185ms
