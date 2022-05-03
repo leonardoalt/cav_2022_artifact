@@ -6,7 +6,7 @@ The easiest way to set up the docker image is to simply pull it from Docker
 Hub:
 
 ```
-$ docker image pull leoalt/cav:latest
+$ docker image pull leoalt/cav-arch:latest
 ```
 
 ### Local Build
@@ -14,7 +14,7 @@ $ docker image pull leoalt/cav:latest
 You can also clone this repository and build the Docker image yourself:
 
 ```
-$ docker build -f Dockerfile-solcmc . --rm -t leoalt/cav
+$ docker build -f Dockerfile-solcmc-arch . --rm -t leoalt/cav-arch
 ```
 
 # Machine Specification
