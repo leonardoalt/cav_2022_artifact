@@ -206,7 +206,7 @@ $ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 60 z3 rew
 ```
 
 Each run should take about 10 minutes, where the last two are expected to timeout.
-The expected output from each run can be found at `tests/erc777_unsafe_[solver_config].txt.
+The expected output from each run can be found at `tests/erc777_unsafe_[solver_config].txt`.
 
 #### Safe Case
 
@@ -243,4 +243,4 @@ $ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 60 z3
 
 Each run should take about 3 minutes, where the last two are expected to
 timeout.  The expected output from each run can be found at
-`tests/erc777_safe_[solver_config].txt.
+`tests/erc777_safe_[solver_config].txt`.
