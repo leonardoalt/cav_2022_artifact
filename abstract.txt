@@ -7,9 +7,9 @@ manuscript and is designed to allow the precise reproduction of the
 results.  For the artifact, the software is distributed as a Docker
 image.
 
-URL: <>
+URL: https://zenodo.org/badge/latestdoi/487557226
 
-SHA256: Available at submission time
+SHA256: a930a11f8235fffbefae117b83e942e5d0cc1d245bbe3777aed2ac5acb348707
 
 Special requirements: none
 
