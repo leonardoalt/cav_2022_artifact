@@ -201,8 +201,8 @@ $ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 900 eld -
 $ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 900 eld -horn -abstract:off
 $ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 900 eld -horn -abstract:term
 $ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 900 eld -horn -abstract:oct
-$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 60 z3 rewriter.pull_cheap_ite=true
-$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 60 z3 rewriter.pull_cheap_ite=true fp.spacer.q3.use_qgen=true fp.spacer.mbqi=false fp.spacer.ground_pobs=false
+$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 60 z3 "rewriter.pull_cheap_ite=true"
+$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 60 z3 "rewriter.pull_cheap_ite=true fp.spacer.q3.use_qgen=true fp.spacer.mbqi=false fp.spacer.ground_pobs=false"
 ```
 
 Each run should take about 10 minutes, where the last two are expected to timeout.
@@ -237,8 +237,8 @@ $ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 600 e
 $ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 600 eld -horn -abstract:off
 $ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 600 eld -horn -abstract:term
 $ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 600 eld -horn -abstract:oct
-$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 60 z3 rewriter.pull_cheap_ite=true
-$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 60 z3 rewriter.pull_cheap_ite=true fp.spacer.q3.use_qgen=true fp.spacer.mbqi=false fp.spacer.ground_pobs=false
+$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 60 z3 "rewriter.pull_cheap_ite=true"
+$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 60 z3 "rewriter.pull_cheap_ite=true fp.spacer.q3.use_qgen=true fp.spacer.mbqi=false fp.spacer.ground_pobs=false"
 ```
 
 Each run should take about 3 minutes, where the last two are expected to
