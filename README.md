@@ -103,6 +103,8 @@ was written for Solidity 0.6.0, so it required two small modifications (version
 pragma and constructor visibility). Its 0.8.0 version is in
 `experiments/deposit_contract/deposit_contract.sol`.
 
+#### Reproducing Table 3 (left)
+
 To run the Deposit Contract experiment with all solvers, please run:
 
 ```
@@ -123,6 +125,8 @@ Similarly to the smoke example, the output will contain the output from the
 tool using each solver, plus a summary of solving and time at the end.  Note
 that this time no solver was able to solve the query, which is reflected in the
 summary at the end of `tests/deposit_contract_bv_all_solvers_timeout.txt`.
+
+#### Reproducing Table 3 (right)
 
 In order to remove the main BitVector reasoning from the contract, we replaced
 two instances of the parity test `if ((node & 1) == 1)` by its arithmetic
@@ -172,7 +176,7 @@ directory, `contracts` contains the original OpenZeppelin contracts,
 `ERC777PropertySafe.sol` is the test harness that uses the new version of the
 library that uses a mutex lock.
 
-#### Unsafe Case
+#### Reproducing Table 4 (left): Unsafe Case
 
 To run the first ERC777 experiment with the original library and all solvers,
 please run:
@@ -208,7 +212,17 @@ $ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 60 z3 "re
 Each run should take about 10 minutes, where the last two are expected to timeout.
 The expected output from each run can be found at `tests/erc777_unsafe_[solver_config].txt`.
 
-#### Safe Case
+#### Reproducing Listing 1.1
+
+The counterexample trace for the transfer function is produced by the
+successful runs above.  For example, running
+```
+$ ./docker_solcmc experiments/ERC777 ERC777Property.sol ERC777Property 900 eld -horn
+```
+produces the output on lines 142 -- 179, also available in the file
+`tests/erc777_unsafe_eld_abstract_default.txt`.
+
+#### Reproducing Table 4 (right): Safe Case
 
 Running the experiments for the safe case is similar to the unsafe case:
 
@@ -243,3 +257,14 @@ $ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 60 z3
 Each run should take about 3 minutes, where the last two are expected to
 timeout.  The expected output from each run can be found at
 `tests/erc777_safe_[solver_config].txt`.
+
+#### Reproducing Listing 1.2
+
+The contract and reentrancy properties are produced by the successful
+runs.  For instance, by running
+```
+$ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 600 eld -horn
+```
+the output will be generated on lines 82 -- 87.  The corresponding
+output is available in `tests/erc777_safe_eld_abstract_default.txt`.
+
