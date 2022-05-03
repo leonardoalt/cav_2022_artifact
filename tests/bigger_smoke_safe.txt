@@ -117,9 +117,9 @@ Info: Contract invariant(s) for fileName:BinaryMachine:
 
 
 ####### Final solving and time report:
-Solver Eldarica Vanilla solved in 3134.8388220071793ms
-Solver Eldarica No Abstraction solved in 2122.5747460126877ms
-Solver Eldarica Term Abstraction solved in 2384.6676719784737ms
-Solver Eldarica Oct Abstraction solved in 1881.3531340360641ms
-Solver Spacer Vanilla solved in 80.62664496898651ms
-Solver Spacer Quant solved in 72.18221998214722ms
+Solver Eldarica Vanilla solved in 10948.59669995308ms
+Solver Eldarica No Abstraction solved in 4982.762200117111ms
+Solver Eldarica Term Abstraction solved in 5232.899399995804ms
+Solver Eldarica Oct Abstraction solved in 4018.1858999729156ms
+Solver Spacer Vanilla solved in 123.71280002593994ms
+Solver Spacer Quant solved in 125.34999990463257ms

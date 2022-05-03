@@ -53,4 +53,4 @@ Smoke.f(0)
 
 
 ####### Final solving and time report:
-Solver eld solved in 2450.2081229686737ms
+Solver eld solved in 11200.043299913406ms

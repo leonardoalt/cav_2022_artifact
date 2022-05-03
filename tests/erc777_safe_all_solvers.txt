@@ -513,9 +513,9 @@ Reentrancy property(ies) for fileName:ERC777Property:
 
 
 ####### Final solving and time report:
-Solver Eldarica Vanilla solved in 45682.94061201811ms
-Solver Eldarica No Abstraction solved in 23273.807443022728ms
-Solver Eldarica Term Abstraction solved in 44046.62266397476ms
-Solver Eldarica Oct Abstraction solved in 23068.61652702093ms
-Solver Spacer Vanilla did not solve in 3336.184505045414ms
-Solver Spacer Quant did not solve in 3846.3116459846497ms
+Solver Eldarica Vanilla solved in 106207.38099980354ms
+Solver Eldarica No Abstraction solved in 42484.83949995041ms
+Solver Eldarica Term Abstraction solved in 84752.97950005531ms
+Solver Eldarica Oct Abstraction solved in 44712.28080010414ms
+Solver Spacer Vanilla did not solve in 7962.839699983597ms
+Solver Spacer Quant did not solve in 9497.131299972534ms

@@ -295,9 +295,9 @@ Warning: CHC: Assertion violation happens here.
 
 
 ####### Final solving and time report:
-Solver Eldarica Vanilla solved in 3727.2335680127144ms
-Solver Eldarica No Abstraction solved in 2517.7839189767838ms
-Solver Eldarica Term Abstraction solved in 2244.6531389951706ms
-Solver Eldarica Oct Abstraction solved in 1970.212123990059ms
-Solver Spacer Vanilla solved in 81.71271902322769ms
-Solver Spacer Quant solved in 62.95057702064514ms
+Solver Eldarica Vanilla solved in 12720.270200014114ms
+Solver Eldarica No Abstraction solved in 5909.07120013237ms
+Solver Eldarica Term Abstraction solved in 6509.96230006218ms
+Solver Eldarica Oct Abstraction solved in 5325.820499897003ms
+Solver Spacer Vanilla solved in 138.54190015792847ms
+Solver Spacer Quant solved in 136.8266999721527ms

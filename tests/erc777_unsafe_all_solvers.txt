@@ -877,9 +877,9 @@ ERC777Property.transfer(0x01, 11579208923731619542357098500868790785326998466564
 
 
 ####### Final solving and time report:
-Solver Eldarica Vanilla solved in 175510.8399400115ms
-Solver Eldarica No Abstraction solved in 140180.3642539978ms
-Solver Eldarica Term Abstraction solved in 185476.67175000906ms
-Solver Eldarica Oct Abstraction solved in 155067.3786250353ms
-Solver Spacer Vanilla did not solve in 3925.4433250427246ms
-Solver Spacer Quant did not solve in 3845.6094269752502ms
+Solver Eldarica Vanilla solved in 488970.9006998539ms
+Solver Eldarica No Abstraction solved in 308685.2948999405ms
+Solver Eldarica Term Abstraction solved in 392496.40820002556ms
+Solver Eldarica Oct Abstraction solved in 310531.14209985733ms
+Solver Spacer Vanilla did not solve in 9544.651899814606ms
+Solver Spacer Quant did not solve in 9303.823299884796ms
