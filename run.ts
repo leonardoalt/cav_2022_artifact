@@ -21,6 +21,7 @@ if (myArgs.length >= 6) {
   solverArgs = myArgs.slice(5).join(' ');
 }
 
+console.log(myArgs);
 const settings = { modelChecker: {
   contracts: {
     fileName: [ contractName ]
@@ -72,9 +73,10 @@ let res = [];
 
 for (let s in solvers) {
   let solver = solvers[s];
-  if (solver.command === 'eld') {
-    solver.params += ' -cex -ssol ';
-  }
+  console.log(solver);
+  //if (solver.command === 'eld') {
+  //  solver.params += ' -cex -ssol ';
+  //}
   console.log('### Running with solver ' + solver.name);
 
   settings.modelChecker.divModNoSlacks = solver.command === 'eld';
