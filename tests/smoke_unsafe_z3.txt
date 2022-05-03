@@ -32,4 +32,4 @@ Warning: CHC: Assertion violation happens here.
 
 
 ####### Final solving and time report:
-Solver z3 solved in 106.43466502428055ms
+Solver z3 solved in 89.83230304718018ms
