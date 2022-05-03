@@ -5,4 +5,4 @@
 
 
 ####### Final solving and time report:
-Solver eld solved in 34979.43497300148ms
+Solver eld solved in 30963.14827400446ms

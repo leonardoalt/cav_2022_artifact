@@ -156,7 +156,7 @@ $ ./docker_solcmc experiments/deposit_contract deposit_contract_no_bv.sol Deposi
 
 This run should take about 80 seconds. The expected output of this run with the
 solving and time summary can be found at
-`tests/deposit_contract_safe_no_bv_eld_no_abstraction.txt`.
+`tests/deposit_contract_safe_no_bv_eld_abstract_off.txt`.
 
 There are still some implicit uses of BitVectors in the query, but Eldarica
 manages to solve it anyway. However, it does not output invariants in this

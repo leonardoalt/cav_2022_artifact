@@ -115,9 +115,9 @@
 
 
 ####### Final solving and time report:
-Solver Eldarica Vanilla did not solve in 41790.60710501671ms
-Solver Eldarica No Abstraction solved in 34280.246097028255ms
-Solver Eldarica Term Abstraction did not solve in 40811.77447998524ms
-Solver Eldarica Oct Abstraction did not solve in 40737.46318304539ms
-Solver Spacer Vanilla did not solve in 40388.54850304127ms
-Solver Spacer Quant did not solve in 40425.213967978954ms
+Solver Eldarica Vanilla did not solve in 61160.28618097305ms
+Solver Eldarica No Abstraction solved in 30773.799228966236ms
+Solver Eldarica Term Abstraction did not solve in 60747.41947495937ms
+Solver Eldarica Oct Abstraction did not solve in 60742.23091703653ms
+Solver Spacer Vanilla did not solve in 60404.52259302139ms
+Solver Spacer Quant did not solve in 60608.08973699808ms
