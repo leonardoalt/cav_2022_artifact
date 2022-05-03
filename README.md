@@ -210,11 +210,10 @@ The expected output from each run can be found at `tests/erc777_unsafe_[solver_c
 
 #### Safe Case
 
-Running the experiments for the safe case is pretty much the same, only
-changing the input file and timeout:
+Running the experiments for the safe case is similar to the unsafe case:
 
 ```
-$ ./docker_solcmc_all_solvers experiments/ERC777 ERC777Property.sol ERC777Property 3600
+$ ./docker_solcmc_all_solvers experiments/ERC777 ERC777PropertySafe.sol ERC777Property 3600
 ```
 
 As two of the solvers' configurations timeout, we recommend the user to run the
