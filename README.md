@@ -349,6 +349,14 @@ outside Docker.  For example:
 $ ts-node run.ts <path-to-artifact>/examples smoke_unsafe.sol Smoke 60 z3
 ```
 
+## Compiling `solc`
+
+In the above installation guide we used a pre-compiled version of
+`solc`.  Compiling `solc` into `Wasm` is described in the relevant
+solidity documentation on [building
+from
+source](https://docs.soliditylang.org/en/latest/installing-solidity.html#building-from-source)
+
 # Relevant Source Code
 
 The implementation of the CHC encoding is in
