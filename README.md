@@ -393,11 +393,11 @@ $ cd solc-js
 $ npm install
 ```
 
-Copy the `solc` compiler (compiled into `wASM`) from this artifact to the
+Copy the `solc` compiler (compiled into `Wasm`) from this artifact to the
 top level of `solc-js`:
 
 ```
-$ cp <path-to-artifact>/soljson_cex.js ./soljson.js
+$ cp <path-to-artifact>/soljson.js ./soljson.js
 ```
 
 The solidity compiler, being highly configurable and backwards
@@ -418,11 +418,24 @@ $ ts-node run.ts <path-to-artifact>/examples smoke_unsafe.sol Smoke 60 z3
 
 ## Compiling `solc`
 
-In the above installation guide we used a pre-compiled version of
-`solc`.  Compiling `solc` into `Wasm` is described in the relevant
-solidity documentation on [building
-from
-source](https://docs.soliditylang.org/en/latest/installing-solidity.html#building-from-source)
+To use `solc` with the javascript configuration (`run.ts` above), one
+needs to compile `solc` into `Wasm`.  The compilation of `solc` into
+`Wasm` is done in a docker image designed for this.  The below example
+first fetches `solc` source code from github, and then compiles `solc`
+into `wasm` using a script provided with the source code
+(`./scripts/ci/bild_emscripten.sh`).
+
+```
+$ git clone --recursive https://github.com/ethereum/solidity.git
+$ cd solidity
+$ docker image pull solbuildpackpusher/solidity-buildpack-deps:emscripten-9
+$ docker run -t --rm -v $(pwd):/root/project --workdir /root/project solbuildpackpusher/solidity-buildpack-deps:emscripten-9 /bin/sh ./scripts/ci/build_emscripten.sh
+```
+
+This produces the file `soljson.js` in the working directory.  Copy this
+file to where you have `solc-js` source code instead of copying the file
+`soljson.js` from this artifact to `solc-js` (see the previous section).
+It is now possible to SolCMC with the locally compiled `Wasm` `solc`.
 
 # Relevant Source Code
 
