@@ -95,7 +95,7 @@ $ ./docker_solcmc examples smoke_safe.sol Smoke 60 z3
 The expected output of each of the commands above can be found in
 `tests/smoke_[un]safe_[solver].txt`.
 
-# Bigger Smoke test
+# Bigger Smoke Test
 
 Please run the following to ensure that all solvers' configurations are working
 properly.
@@ -120,7 +120,7 @@ The second test takes 12s on the specified machine, and its output can be found
 in `tests/bigger_smoke_safe.txt`. Its output is analogous to the unsafe case, with
 invariants instead of counterexamples.
 
-# Experiments from the Paper
+# Reproducing the Experiments of the Paper
 
 The code related to the smart contracts analyzed in the paper can be found in
 the `experiments` directory.
