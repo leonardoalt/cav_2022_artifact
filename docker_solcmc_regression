@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+docker run -it --rm --user $(id -u):$(id -g) -v $(pwd):/smtch --workdir /smtch leoalt/cav:latest /bin/sh run_solcmc_regression $@

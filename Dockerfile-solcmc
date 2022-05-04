@@ -27,8 +27,11 @@ RUN npm install -g ts-node
 RUN cd /home/                                                            \
     && git clone --branch cav_artifact https://github.com/ethereum/solc-js.git \
     && cd /home/solc-js/                                                 \
-    && npm install                                                       
+    && npm install
+
+COPY regression /home/solc-js/regression
 
 COPY run.ts /home/solc-js/
 COPY run_all_solvers.ts /home/solc-js/
-COPY soljson_cex.js /home/solc-js/soljson.js
+COPY run_regression.ts /home/solc-js/
+COPY soljson.js /home/solc-js/soljson.js

@@ -297,6 +297,73 @@ $ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 600 e
 the output will be generated on lines 82 -- 87.  The corresponding
 output is available in `tests/erc777_safe_eld_abstract_default.txt`.
 
+## Regression Tests (Sec. B.3)
+
+The regression tests can be found in `regression/`. Inside that directory, the
+tests are separated by category.
+
+In this experiment we compare the default version of Eldarica and z3 with the
+parameters `rewriter.pull_cheap_ite=true fp.spacer.q3.use_qgen=true
+fp.spacer.mbqi=false fp.spacer.ground_pobs=false"`.
+
+The timeout given to the solvers is 10 seconds per query.
+
+### Small Regression Test
+
+One category can be tested, for example, via the command below, where `abi` is
+the subdirectory inside `regression/`.
+
+```
+$ /docker_solcmc_regression math 10
+```
+
+The command above runs Running the command above should take about 40s, and he
+expected output for the command above can be found in
+`tests/regression/math.txt`.
+
+The output should contain the entire output from the tool for every benchmark
+inside the given category, for each solver.  The end of the output should
+contain the summary of the execution, consisting of a JSON object where each
+benchmark's name is a key to a JSON array of results per solver. Each solver
+result contains how many queries were not solved, solved safe, solved unsafe,
+and whether that solver was considered a winner in that benchmark. A solver is
+considered a winner for a certain benchmark if it did not solve less queries
+than the other solver. Therefore, if there is a tie, both solvers are
+considered winners.
+
+```
+{
+	"/home/solc-js/regression/math/addmod_1.sol":[
+		{"notProved":0,"unsafe":0,"safe":1,"winner":true},
+		{"notProved":0,"unsafe":1,"safe":0,"winner":true}
+	],
+	"/home/solc-js/regression/math/addmod_mulmod.sol":[
+		{"notProved":0,"unsafe":0,"safe":0,"winner":true},
+		{"notProved":0,"unsafe":0,"safe":0,"winner":true}
+	],
+	"/home/solc-js/regression/math/addmod_mulmod_zero.sol":[
+		{"notProved":0,"unsafe":0,"safe":2,"winner":true},
+		{"notProved":0,"unsafe":2,"safe":0,"winner":true}
+	],
+	"/home/solc-js/regression/math/addmulmod.sol":[
+		{"notProved":1,"unsafe":0,"safe":0,"winner":false},
+		{"notProved":0,"unsafe":0,"safe":1,"winner":true}
+	],
+	"/home/solc-js/regression/math/mulmod_1.sol":[
+		{"notProved":0,"unsafe":0,"safe":1,"winner":true},
+		{"notProved":0,"unsafe":1,"safe":0,"winner":true}
+	]
+}
+```
+
+The JSON object above was obtained for the given `math` experiment.  It shows
+that out of 5 benchmarks, z3 was a winner in 5 and Eldarica was a winner in 4,
+since it could not solve one query in one of them.
+
+## Reproducing Table 5
+
+TODO
+
 # Usage Beyond the Paper
 
 TODO
@@ -367,4 +434,3 @@ and
 In particular, the syntactic elements of the Solidity language
 are encoded to CHCs using the overridden `visit` and `endVisit`
 functions (e.g. `visit(ContractDefinition const &)`)
-

@@ -1,0 +1,3 @@
+cd /home/solc-js/
+dir=`pwd`
+ts-node run_regression.ts "$dir" $@
