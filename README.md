@@ -303,7 +303,51 @@ TODO
 
 # Installation Outside the Docker Image
 
-TODO
+This quick installation guide should work for any unix machine.  It has
+been tested in arch linux, ubuntu and OS X.
+
+Install first `z3` or `eldarica` in order to have a CHC engine.  In
+order to use `eldarica`, make sure that the directory containing
+`eldarica` is in the search path.  `z3` is available from
+[the z3 github repository](https://github.com/z3prover/z3) and
+`Eldarica` respectively from [the Eldarica github
+repository](https://github.com/uuverifiers/eldarica.git).
+
+Install ts-node:
+```
+$ npm install -g ts-node
+```
+
+Fetch the `javascript` bindings for `solc`.
+
+```
+$ git clone https://github.com/ethereum/solc-js.git
+$ cd solc-js
+$ npm install
+```
+
+Copy the `solc` compiler (compiled into `wASM`) from this artifact to the
+top level of `solc-js`:
+
+```
+$ cp <path-to-artifact>/soljson_cex.js ./soljson.js
+```
+
+The solidity compiler, being highly configurable and backwards
+compatible with different language versions, is typically configured
+using java-script bindings.  To this end, this artifact provides a
+java-script configuration file that immediately allows using `solcmc`.
+Copy the run script from this artifact to the top level of `solc-js`:
+
+```
+$ cp <path-to-artifact>/run.ts .
+```
+
+Now `SolCMC` can be run on the examples provided in this artifact
+outside Docker.  For example:
+```
+$ ts-node run.ts <path-to-artifact>/examples smoke_unsafe.sol Smoke 60 z3
+```
 
 # Relevant Source Code
 
