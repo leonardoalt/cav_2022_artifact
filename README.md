@@ -46,6 +46,21 @@ You can also clone this repository and build the Docker image yourself:
 $ docker build -f Dockerfile-solcmc . --rm -t leoalt/cav
 ```
 
+# Available Commands
+
+There are two available scripts to run the smart contract analysis with different
+solvers:
+
+- `./docker_solcmc <contract_dir> <contract_file.sol> <ContractName> <timeout
+  in seconds> <solver command> <solver arguments>` can be used to run one
+  solver on one benchmark, and is the easiest way to test the tool against any
+  smart contract. Please see section Smoke Test below for an example.
+- `./docker_solcmc_all_solvers <contract_dir> <contract_file.sol>
+  <ContractName> <timeout in seconds>` runs every solver and different
+  configuration on the selected benchmark. Please see section `Bigger Smoke
+  Test` below for an example. This script is also used on the experiments from
+  the paper.
+
 # Machine Specification
 
 The machine used for all runs described in this document is a laptop with
@@ -62,21 +77,6 @@ In the tests below, if we claim that a certain test should run successfully and
 you get a different output, please increase the timeout. We have noticed that
 especially on Mac OSX these tests take much longer than on the reference
 machine.
-
-# Available Commands
-
-There are two available scripts to run the smart contract analysis with different
-solvers:
-
-- `./docker_solcmc <contract_dir> <contract_file.sol> <ContractName> <timeout
-  in seconds> <solver command> <solver arguments>` can be used to run one
-  solver on one benchmark, and is the easiest way to test the tool against any
-  smart contract. Please see section Smoke Test below for an example.
-- `./docker_solcmc_all_solvers <contract_dir> <contract_file.sol>
-  <ContractName> <timeout in seconds>` runs every solver and different
-  configuration on the selected benchmark. Please see section `Bigger Smoke
-  Test` below for an example. This script is also used on the experiments from
-  the paper.
 
 # Smoke Test
 
