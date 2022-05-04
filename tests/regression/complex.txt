@@ -828,3 +828,5 @@
 }
 ### End output
 {"/home/solc-js/regression/complex/MerkleProof.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/complex/warn_on_typecast.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/complex/slither/const_state_variables.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/complex/slither/data_dependency.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/complex/slither/external_function.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}]}
+Category		Total		Eldarica		Spacer Quant
+complex		5		5		5

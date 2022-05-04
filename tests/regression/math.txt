@@ -489,3 +489,5 @@
 }
 ### End output
 {"/home/solc-js/regression/math/addmod_1.sol":[{"notProved":0,"unsafe":0,"safe":1,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}],"/home/solc-js/regression/math/addmod_mulmod.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/math/addmod_mulmod_zero.sol":[{"notProved":0,"unsafe":0,"safe":2,"winner":true},{"notProved":0,"unsafe":2,"safe":0,"winner":true}],"/home/solc-js/regression/math/addmulmod.sol":[{"notProved":1,"unsafe":0,"safe":0,"winner":false},{"notProved":0,"unsafe":0,"safe":1,"winner":true}],"/home/solc-js/regression/math/mulmod_1.sol":[{"notProved":0,"unsafe":0,"safe":1,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}]}
+Category		Total		Eldarica		Spacer Quant
+math		5		4		5

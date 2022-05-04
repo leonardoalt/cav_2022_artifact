@@ -3,6 +3,5 @@
 for dir in ./regression/*
 do
 	cat=$(basename $dir)
-	echo $cat
 	./docker_solcmc_regression "$cat" 10 > "tests/regression/$cat.txt"
 done

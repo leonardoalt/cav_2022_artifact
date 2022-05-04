@@ -159,3 +159,5 @@
 }
 ### End output
 {"/home/solc-js/regression/simple/smoke_test.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/simple/static_array.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}]}
+Category		Total		Eldarica		Spacer Quant
+simple		2		2		2

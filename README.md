@@ -348,12 +348,22 @@ log file for each category in `./tests/regression/`, named `<category>.txt`.
 The last lines of each of the log files should show how many benchmarks there
 were, and on how many benchmarks each of the solver was considered a winner.
 
-The script below merges all the results from the different categories into a
-single table:
+The script below merges all the results from the different categories into
+Table 5:
 
 ```
 $ ./docker_solcmc_regression_merge
 ```
+
+## Errata
+
+A few categories have wrong benchmarks
+
+TODO
+
+# Usage Beyond the Paper
+
+TODO
 
 # Installation Outside the Docker Image
 
