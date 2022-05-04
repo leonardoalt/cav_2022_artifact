@@ -29,6 +29,9 @@ The structure of this `README` is as follows.
 
 # Set Up
 
+The experiments below require a common modern UNIX OS.  The extra required
+packages are `docker` and `python`.
+
 ## Easiest
 
 The easiest way to set up the docker image is to simply pull it from Docker
@@ -312,59 +315,45 @@ The timeout given to the solvers is 10 seconds per query.
 
 ### Small Regression Test
 
-One category can be tested, for example, via the command below, where `abi` is
-the subdirectory inside `regression/`.
+One category can be tested, for example, via the command below, where `simple` is
+a subdirectory inside `regression/`.
 
 ```
-$ /docker_solcmc_regression math 10
+$ /docker_solcmc_regression simple 10
 ```
 
-The command above runs Running the command above should take about 40s, and he
-expected output for the command above can be found in
-`tests/regression/math.txt`.
+Running the command above should take about 10s, and its expected output can be
+found in `tests/regression/simple.txt`.
 
 The output should contain the entire output from the tool for every benchmark
 inside the given category, for each solver.  The end of the output should
-contain the summary of the execution, consisting of a JSON object where each
-benchmark's name is a key to a JSON array of results per solver. Each solver
-result contains how many queries were not solved, solved safe, solved unsafe,
-and whether that solver was considered a winner in that benchmark. A solver is
-considered a winner for a certain benchmark if it did not solve less queries
-than the other solver. Therefore, if there is a tie, both solvers are
-considered winners.
-
-```
-{
-	"/home/solc-js/regression/math/addmod_1.sol":[
-		{"notProved":0,"unsafe":0,"safe":1,"winner":true},
-		{"notProved":0,"unsafe":1,"safe":0,"winner":true}
-	],
-	"/home/solc-js/regression/math/addmod_mulmod.sol":[
-		{"notProved":0,"unsafe":0,"safe":0,"winner":true},
-		{"notProved":0,"unsafe":0,"safe":0,"winner":true}
-	],
-	"/home/solc-js/regression/math/addmod_mulmod_zero.sol":[
-		{"notProved":0,"unsafe":0,"safe":2,"winner":true},
-		{"notProved":0,"unsafe":2,"safe":0,"winner":true}
-	],
-	"/home/solc-js/regression/math/addmulmod.sol":[
-		{"notProved":1,"unsafe":0,"safe":0,"winner":false},
-		{"notProved":0,"unsafe":0,"safe":1,"winner":true}
-	],
-	"/home/solc-js/regression/math/mulmod_1.sol":[
-		{"notProved":0,"unsafe":0,"safe":1,"winner":true},
-		{"notProved":0,"unsafe":1,"safe":0,"winner":true}
-	]
-}
-```
-
-The JSON object above was obtained for the given `math` experiment.  It shows
-that out of 5 benchmarks, z3 was a winner in 5 and Eldarica was a winner in 4,
-since it could not solve one query in one of them.
+contain the summary of the execution, consisting of a table showing how many
+benchmarks are in the given category, and on how many of those each solver was
+considered a winner. A solver is considered a winner for a certain benchmark if
+it did not solve less queries than the other solver. Therefore, if there is a
+tie, both solvers are considered winners.
 
 ## Reproducing Table 5
 
-TODO
+In order to reproduce Table 5 from the paper, the command above needs to be run
+for every subdirectory of `regression/`, which is done by the script below.
+
+```
+$ ./docker_solcmc_regression_all
+```
+
+The entire run should take less than 3 hours. After the run, there should be
+log file for each category in `./tests/regression/`, named `<category>.txt`.
+
+The last lines of each of the log files should show how many benchmarks there
+were, and on how many benchmarks each of the solver was considered a winner.
+
+The script below merges all the results from the different categories into a
+single table:
+
+```
+$ ./docker_solcmc_regression_merge
+```
 
 # Installation Outside the Docker Image
 

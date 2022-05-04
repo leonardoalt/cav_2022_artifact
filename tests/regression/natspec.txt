@@ -1,0 +1,915 @@
+[ [32m'/home/solc-js'[39m, [32m'natspec'[39m, [32m'10'[39m ]
+/home/solc-js/regression/natspec
+### Running /home/solc-js/regression/natspec/abstract_function_nondet_1.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:10:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'10 | \t\tassert(z == y);\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:10:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'10 | \t\tassert(z == y);\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/natspec/abstract_function_nondet_pow_no_abstraction.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/natspec/abstract_function_nondet_pow_with_abstraction.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/natspec/natspec_smtchecker_empty.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3130'[39m,
+      formattedMessage: [32m'Warning: Unknown option for "custom:smtchecker": ""\n'[39m +
+        [32m' --> test:3:2:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'3 | \tfunction f(uint x) internal pure returns (uint) {\n'[39m +
+        [32m'  | \t^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Unknown option for "custom:smtchecker": ""'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3130'[39m,
+      formattedMessage: [32m'Warning: Unknown option for "custom:smtchecker": ""\n'[39m +
+        [32m' --> test:3:2:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'3 | \tfunction f(uint x) internal pure returns (uint) {\n'[39m +
+        [32m'  | \t^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Unknown option for "custom:smtchecker": ""'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/natspec/natspec_smtchecker_error_1.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3130'[39m,
+      formattedMessage: [32m'Warning: Unknown option for "custom:smtchecker": "abstract-function"\n'[39m +
+        [32m' --> test:3:2:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'3 | \tfunction f(uint x) internal pure returns (uint) {\n'[39m +
+        [32m'  | \t^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Unknown option for "custom:smtchecker": "abstract-function"'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3130'[39m,
+      formattedMessage: [32m'Warning: Unknown option for "custom:smtchecker": "abstract-function"\n'[39m +
+        [32m' --> test:3:2:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'3 | \tfunction f(uint x) internal pure returns (uint) {\n'[39m +
+        [32m'  | \t^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Unknown option for "custom:smtchecker": "abstract-function"'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/natspec/safe_assert_false_positive.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:12:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'12 | \t\tassert(x == 0);\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:15:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'15 | \t\tassert(y == 0); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:12:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'12 | \t\tassert(x == 0);\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:15:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'15 | \t\tassert(y == 0); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/natspec/safe_assert_false_positive_pure.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to view\n'[39m +
+        [32m' --> test:5:2:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'5 | \tfunction g(uint _x) public {\n'[39m +
+        [32m'  | \t^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to view'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to pure\n'[39m +
+        [32m'  --> test:20:2:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'20 | \tfunction f2(uint _y) internal view returns (uint) {\n'[39m +
+        [32m'   | \t^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to pure'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:8:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'8 | \t\tassert(z == _x); // should hold but f1 was abstracted as nondet, so it fails\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to view\n'[39m +
+        [32m' --> test:5:2:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'5 | \tfunction g(uint _x) public {\n'[39m +
+        [32m'  | \t^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to view'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to pure\n'[39m +
+        [32m'  --> test:20:2:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'20 | \tfunction f2(uint _y) internal view returns (uint) {\n'[39m +
+        [32m'   | \t^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to pure'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:8:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'8 | \t\tassert(z == _x); // should hold but f1 was abstracted as nondet, so it fails\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/natspec/unsafe_assert_remains_unsafe.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:7:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'7 | \t\tassert(x > 0); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:10:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'10 | \t\tassert(y > 0); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:7:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'7 | \t\tassert(x > 0); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:10:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'10 | \t\tassert(y > 0); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+{"/home/solc-js/regression/natspec/abstract_function_nondet_1.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}],"/home/solc-js/regression/natspec/abstract_function_nondet_pow_no_abstraction.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/natspec/abstract_function_nondet_pow_with_abstraction.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/natspec/natspec_smtchecker_empty.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/natspec/natspec_smtchecker_error_1.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/natspec/safe_assert_false_positive.sol":[{"notProved":0,"unsafe":2,"safe":0,"winner":true},{"notProved":0,"unsafe":2,"safe":0,"winner":true}],"/home/solc-js/regression/natspec/safe_assert_false_positive_pure.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}],"/home/solc-js/regression/natspec/unsafe_assert_remains_unsafe.sol":[{"notProved":0,"unsafe":2,"safe":0,"winner":true},{"notProved":0,"unsafe":2,"safe":0,"winner":true}]}

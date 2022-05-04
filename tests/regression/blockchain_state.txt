@@ -1,0 +1,3898 @@
+[ [32m'/home/solc-js'[39m, [32m'blockchain_state'[39m, [32m'10'[39m ]
+/home/solc-js/regression/blockchain_state
+### Running /home/solc-js/regression/blockchain_state/balance_non_zero.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:3:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'3 | \t\tassert(address(this).balance == 0); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:4:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'4 | \t\tassert(address(this).balance > 0); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:3:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'3 | \t\tassert(address(this).balance == 0); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:4:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'4 | \t\tassert(address(this).balance > 0); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/balance_non_zero_2.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:7:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'7 | \t\tassert(address(this).balance > 200); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:7:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'7 | \t\tassert(address(this).balance > 200); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/balance_receive.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:7:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'7 | \t\tassert(address(this).balance == prevBalance + msg.value); // should fail because there might be funds from selfdestruct/block.coinbase\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:8:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'8 | \t\tassert(address(this).balance < prevBalance + msg.value); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:7:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'7 | \t\tassert(address(this).balance == prevBalance + msg.value); // should fail because there might be funds from selfdestruct/block.coinbase\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:8:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'8 | \t\tassert(address(this).balance < prevBalance + msg.value); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/balance_receive_2.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:12:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'12 | \t\tassert(address(this).balance > x + 10); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:12:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'12 | \t\tassert(address(this).balance > x + 10); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/balance_receive_3.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:3:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'3 | \t\tassert(address(this).balance == msg.value); // should fail because there might be funds from before deployment\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:3:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'3 | \t\tassert(address(this).balance == msg.value); // should fail because there might be funds from before deployment\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/balance_receive_4.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:9:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'9 | \t\tassert(address(this).balance >= c * 12); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:9:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'9 | \t\tassert(address(this).balance >= c * 12); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/balance_receive_5.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:7:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'7 | \t\tassert(address(this).balance == sum); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:7:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'7 | \t\tassert(address(this).balance == sum); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/balance_receive_calls.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:8:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'8 | \t\tassert(address(this).balance >= 20); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:13:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'13 | \t\tassert(address(this).balance >= 20); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:18:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'18 | \t\tassert(address(this).balance >= 20); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:8:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'8 | \t\tassert(address(this).balance >= 20); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:13:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'13 | \t\tassert(address(this).balance >= 20); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:18:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'18 | \t\tassert(address(this).balance >= 20); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/balance_receive_ext_calls.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1218'[39m,
+      formattedMessage: [32m'Warning: CHC: Error trying to invoke SMT solver.\n'[39m +
+        [32m'  --> test:10:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'10 | \t\tassert(address(this).balance >= x); // should hold\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Error trying to invoke SMT solver.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:9:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'9 | \t\tassert(address(this).balance == x); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'5840'[39m,
+      formattedMessage: [32m'Warning: CHC: 1 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: 1 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:9:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'9 | \t\tassert(address(this).balance == x); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/balance_receive_ext_calls_2.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'9302'[39m,
+      formattedMessage: [32m'Warning: Return value of low-level calls not used.\n'[39m +
+        [32m' --> test:4:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'4 | \t\t_a.call("");\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Return value of low-level calls not used.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1218'[39m,
+      formattedMessage: [32m'Warning: CHC: Error trying to invoke SMT solver.\n'[39m +
+        [32m' --> test:6:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'6 | \t\tassert(address(this).balance >= x); // should hold\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Error trying to invoke SMT solver.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:5:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'5 | \t\tassert(address(this).balance == x); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'5840'[39m,
+      formattedMessage: [32m'Warning: CHC: 1 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: 1 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'9302'[39m,
+      formattedMessage: [32m'Warning: Return value of low-level calls not used.\n'[39m +
+        [32m' --> test:4:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'4 | \t\t_a.call("");\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Return value of low-level calls not used.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:5:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'5 | \t\tassert(address(this).balance == x); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/balance_receive_ext_calls_mutex.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:17:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'17 | \t\tassert(address(this).balance < x); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:17:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'17 | \t\tassert(address(this).balance < x); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/balance_spend.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:14:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'14 | \t\tassert(address(this).balance > 90); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:14:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'14 | \t\tassert(address(this).balance > 90); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/balance_spend_2.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:11:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'11 | \t\tassert(address(this).balance > 80); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:12:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'12 | \t\tassert(address(this).balance > 90); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'5840'[39m,
+      formattedMessage: [32m'Warning: CHC: 1 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: 1 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:10:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'10 | \t\tassert(address(this).balance > 0); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:11:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'11 | \t\tassert(address(this).balance > 80); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:12:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'12 | \t\tassert(address(this).balance > 90); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/balance_zero.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:3:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'3 | \t\tassert(address(this).balance == 0); // should fail because there might be funds from before deployment\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:4:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'4 | \t\tassert(address(this).balance > 0); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:3:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'3 | \t\tassert(address(this).balance == 0); // should fail because there might be funds from before deployment\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:4:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'4 | \t\tassert(address(this).balance > 0); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/balance_zero_2.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:3:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'3 | \t\tassert(address(this).balance == 0); // should fail because there might be funds from before deployment\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:4:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'4 | \t\tassert(address(this).balance > 0); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:3:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'3 | \t\tassert(address(this).balance == 0); // should fail because there might be funds from before deployment\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:4:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'4 | \t\tassert(address(this).balance > 0); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/balance_zero_3.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:4:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'4 | \t\tassert(x == 0); // should fail because there might be funds from before deployment\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:5:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'5 | \t\tassert(x > 0); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:8:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'8 | \t\tassert(x == 0); // should fail because there might be funds from before deployment\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:9:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'9 | \t\tassert(x > 0); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:4:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'4 | \t\tassert(x == 0); // should fail because there might be funds from before deployment\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:5:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'5 | \t\tassert(x > 0); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:8:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'8 | \t\tassert(x == 0); // should fail because there might be funds from before deployment\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:9:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'9 | \t\tassert(x > 0); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/balance_zero_4.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:7:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'7 | \t\tassert(x == 0); // should fail because there might be funds from before deployment\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:8:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'8 | \t\tassert(x > 0); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:11:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'11 | \t\tassert(x == 0); // should fail because there might be funds from before deployment\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:12:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'12 | \t\tassert(x > 0); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:7:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'7 | \t\tassert(x == 0); // should fail because there might be funds from before deployment\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:8:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'8 | \t\tassert(x > 0); // should fail\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:11:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'11 | \t\tassert(x == 0); // should fail because there might be funds from before deployment\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:12:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'12 | \t\tassert(x > 0); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/decreasing_balance.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:15:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'15 | \t\tassert(address(this).balance == t);\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:15:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'15 | \t\tassert(address(this).balance == t);\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/free_function_1.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/free_function_2.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:13:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'13 | \t\tassert(b1 == b2); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:13:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'13 | \t\tassert(b1 == b2); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/library_internal_1.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/library_internal_2.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:16:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'16 | \t\tassert(b1 == b2); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:16:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'16 | \t\tassert(b1 == b2); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/library_public_1.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'4588'[39m,
+      formattedMessage: [32m'Warning: Assertion checker does not yet implement this type of function call.\n'[39m +
+        [32m'  --> test:11:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'11 | \t\ta.l();\n'[39m +
+        [32m'   | \t\t^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Assertion checker does not yet implement this type of function call.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:13:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'13 | \t\tassert(b1 == b2); // should fail because the called library can transfer with `this`s balance\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:14:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'14 | \t\tassert(x == 0); // should fail because of `delegatecall`\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'4588'[39m,
+      formattedMessage: [32m'Warning: Assertion checker does not yet implement this type of function call.\n'[39m +
+        [32m'  --> test:11:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'11 | \t\ta.l();\n'[39m +
+        [32m'   | \t\t^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Assertion checker does not yet implement this type of function call.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:13:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'13 | \t\tassert(b1 == b2); // should fail because the called library can transfer with `this`s balance\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:14:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'14 | \t\tassert(x == 0); // should fail because of `delegatecall`\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/library_public_2.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'4588'[39m,
+      formattedMessage: [32m'Warning: Assertion checker does not yet implement this type of function call.\n'[39m +
+        [32m'  --> test:13:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'13 | \t\ta.l();\n'[39m +
+        [32m'   | \t\t^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Assertion checker does not yet implement this type of function call.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:15:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'15 | \t\tassert(b1 == b2); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:16:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'16 | \t\tassert(x == 0); // should fail because of `delegatecall`\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'4588'[39m,
+      formattedMessage: [32m'Warning: Assertion checker does not yet implement this type of function call.\n'[39m +
+        [32m'  --> test:13:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'13 | \t\ta.l();\n'[39m +
+        [32m'   | \t\t^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Assertion checker does not yet implement this type of function call.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:15:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'15 | \t\tassert(b1 == b2); // should fail\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:16:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'16 | \t\tassert(x == 0); // should fail because of `delegatecall`\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/library_public_3.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'5667'[39m,
+      formattedMessage: [32m'Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.\n'[39m +
+        [32m' --> test:2:13:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'2 | \tfunction l(address payable a) public returns (uint) {\n'[39m +
+        [32m'  | \t           ^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Unused function parameter. Remove or comment out the variable name to silence this warning.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'4588'[39m,
+      formattedMessage: [32m'Warning: Assertion checker does not yet implement this type of function call.\n'[39m +
+        [32m'  --> test:13:12:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'13 | \t\tuint v = a.l();\n'[39m +
+        [32m'   | \t\t         ^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Assertion checker does not yet implement this type of function call.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:15:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'15 | \t\tassert(b1 == b2); // should fail because the called library can transfer with `this`s balance\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:16:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'16 | \t\tassert(x == 0); // should fail because of `delegatecall`\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:17:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m"17 | \t\tassert(v == msg.value); // should hold but we don't support `delegatecall` properly yet.\n"[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'5667'[39m,
+      formattedMessage: [32m'Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.\n'[39m +
+        [32m' --> test:2:13:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'2 | \tfunction l(address payable a) public returns (uint) {\n'[39m +
+        [32m'  | \t           ^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Unused function parameter. Remove or comment out the variable name to silence this warning.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'4588'[39m,
+      formattedMessage: [32m'Warning: Assertion checker does not yet implement this type of function call.\n'[39m +
+        [32m'  --> test:13:12:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'13 | \t\tuint v = a.l();\n'[39m +
+        [32m'   | \t\t         ^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Assertion checker does not yet implement this type of function call.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:15:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'15 | \t\tassert(b1 == b2); // should fail because the called library can transfer with `this`s balance\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:16:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'16 | \t\tassert(x == 0); // should fail because of `delegatecall`\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:17:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m"17 | \t\tassert(v == msg.value); // should hold but we don't support `delegatecall` properly yet.\n"[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/library_public_4.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'5667'[39m,
+      formattedMessage: [32m'Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.\n'[39m +
+        [32m' --> test:2:13:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'2 | \tfunction l(address payable a) public returns (address) {\n'[39m +
+        [32m'  | \t           ^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Unused function parameter. Remove or comment out the variable name to silence this warning.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to view\n'[39m +
+        [32m' --> test:2:2:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'2 | \tfunction l(address payable a) public returns (address) {\n'[39m +
+        [32m'  | \t^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to view'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'4588'[39m,
+      formattedMessage: [32m'Warning: Assertion checker does not yet implement this type of function call.\n'[39m +
+        [32m'  --> test:13:15:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'13 | \t\taddress v = a.l();\n'[39m +
+        [32m'   | \t\t            ^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Assertion checker does not yet implement this type of function call.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:15:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'15 | \t\tassert(b1 == b2); // should fail because the called library can transfer with `this`s balance\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:16:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'16 | \t\tassert(x == 0); // should fail because of `delegatecall`\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:17:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m"17 | \t\tassert(v == msg.sender); // should hold but we don't support `delegatecall` properly yet.\n"[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'5667'[39m,
+      formattedMessage: [32m'Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.\n'[39m +
+        [32m' --> test:2:13:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'2 | \tfunction l(address payable a) public returns (address) {\n'[39m +
+        [32m'  | \t           ^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Unused function parameter. Remove or comment out the variable name to silence this warning.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to view\n'[39m +
+        [32m' --> test:2:2:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'2 | \tfunction l(address payable a) public returns (address) {\n'[39m +
+        [32m'  | \t^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to view'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'4588'[39m,
+      formattedMessage: [32m'Warning: Assertion checker does not yet implement this type of function call.\n'[39m +
+        [32m'  --> test:13:15:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'13 | \t\taddress v = a.l();\n'[39m +
+        [32m'   | \t\t            ^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Assertion checker does not yet implement this type of function call.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:15:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'15 | \t\tassert(b1 == b2); // should fail because the called library can transfer with `this`s balance\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:16:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'16 | \t\tassert(x == 0); // should fail because of `delegatecall`\n'[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m'  --> test:17:3:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m"17 | \t\tassert(v == msg.sender); // should hold but we don't support `delegatecall` properly yet.\n"[39m +
+        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/this_does_not_change.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/this_does_not_change_external_call.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/this_does_not_change_internal_call.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/blockchain_state/transfer.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:7:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'7 | \t\tassert(address(this).balance > 500);\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'6328'[39m,
+      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
+        [32m' --> test:7:3:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'7 | \t\tassert(address(this).balance > 500);\n'[39m +
+        [32m'  | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: Assertion violation happens here.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+{"/home/solc-js/regression/blockchain_state/balance_non_zero.sol":[{"notProved":0,"unsafe":2,"safe":0,"winner":true},{"notProved":0,"unsafe":2,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/balance_non_zero_2.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/balance_receive.sol":[{"notProved":0,"unsafe":2,"safe":0,"winner":true},{"notProved":0,"unsafe":2,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/balance_receive_2.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/balance_receive_3.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/balance_receive_4.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/balance_receive_5.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/balance_receive_calls.sol":[{"notProved":0,"unsafe":3,"safe":0,"winner":true},{"notProved":0,"unsafe":3,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/balance_receive_ext_calls.sol":[{"notProved":1,"unsafe":1,"safe":0,"winner":false},{"notProved":0,"unsafe":1,"safe":1,"winner":true}],"/home/solc-js/regression/blockchain_state/balance_receive_ext_calls_2.sol":[{"notProved":1,"unsafe":1,"safe":0,"winner":false},{"notProved":0,"unsafe":1,"safe":1,"winner":true}],"/home/solc-js/regression/blockchain_state/balance_receive_ext_calls_mutex.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/balance_spend.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/balance_spend_2.sol":[{"notProved":1,"unsafe":2,"safe":0,"winner":false},{"notProved":0,"unsafe":3,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/balance_zero.sol":[{"notProved":0,"unsafe":2,"safe":0,"winner":true},{"notProved":0,"unsafe":2,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/balance_zero_2.sol":[{"notProved":0,"unsafe":2,"safe":0,"winner":true},{"notProved":0,"unsafe":2,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/balance_zero_3.sol":[{"notProved":0,"unsafe":4,"safe":0,"winner":true},{"notProved":0,"unsafe":4,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/balance_zero_4.sol":[{"notProved":0,"unsafe":4,"safe":0,"winner":true},{"notProved":0,"unsafe":4,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/decreasing_balance.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/free_function_1.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/free_function_2.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/library_internal_1.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/library_internal_2.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/library_public_1.sol":[{"notProved":0,"unsafe":2,"safe":0,"winner":true},{"notProved":0,"unsafe":2,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/library_public_2.sol":[{"notProved":0,"unsafe":2,"safe":0,"winner":true},{"notProved":0,"unsafe":2,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/library_public_3.sol":[{"notProved":0,"unsafe":3,"safe":0,"winner":true},{"notProved":0,"unsafe":3,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/library_public_4.sol":[{"notProved":0,"unsafe":3,"safe":0,"winner":true},{"notProved":0,"unsafe":3,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/this_does_not_change.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/this_does_not_change_external_call.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/this_does_not_change_internal_call.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/blockchain_state/transfer.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}]}

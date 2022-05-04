@@ -1,0 +1,161 @@
+[ [32m'/home/solc-js'[39m, [32m'simple'[39m, [32m'10'[39m ]
+/home/solc-js/regression/simple
+### Running /home/solc-js/regression/simple/smoke_test.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/simple/static_array.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+{"/home/solc-js/regression/simple/smoke_test.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/simple/static_array.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}]}

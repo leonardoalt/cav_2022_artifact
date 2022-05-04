@@ -1,0 +1,830 @@
+[ [32m'/home/solc-js'[39m, [32m'complex'[39m, [32m'10'[39m ]
+/home/solc-js/regression/complex
+### Running /home/solc-js/regression/complex/MerkleProof.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/complex/warn_on_typecast.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/complex/slither/const_state_variables.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2519'[39m,
+      formattedMessage: [32m'Warning: This declaration shadows an existing declaration.\n'[39m +
+        [32m'  --> test:39:5:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'39 |     uint constant A = 1;\n'[39m +
+        [32m'   |     ^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'Note: The shadowed declaration is here:\n'[39m +
+        [32m' --> test:2:1:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'2 | contract A {\n'[39m +
+        [32m'  | ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This declaration shadows an existing declaration.'[39m,
+      secondarySourceLocations: [36m[Array][39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to view\n'[39m +
+        [32m'  --> test:46:5:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'46 |     function getNumber() public returns(uint){\n'[39m +
+        [32m'   |     ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to view'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2519'[39m,
+      formattedMessage: [32m'Warning: This declaration shadows an existing declaration.\n'[39m +
+        [32m'  --> test:39:5:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'39 |     uint constant A = 1;\n'[39m +
+        [32m'   |     ^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'Note: The shadowed declaration is here:\n'[39m +
+        [32m' --> test:2:1:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'2 | contract A {\n'[39m +
+        [32m'  | ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This declaration shadows an existing declaration.'[39m,
+      secondarySourceLocations: [36m[Array][39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to view\n'[39m +
+        [32m'  --> test:46:5:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'46 |     function getNumber() public returns(uint){\n'[39m +
+        [32m'   |     ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to view'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/complex/slither/data_dependency.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to view\n'[39m +
+        [32m'   --> test:114:3:\n'[39m +
+        [32m'    |\n'[39m +
+        [32m'114 |   function bar() internal returns (uint) {\n'[39m +
+        [32m'    |   ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to view'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to view\n'[39m +
+        [32m'   --> test:114:3:\n'[39m +
+        [32m'    |\n'[39m +
+        [32m'114 |   function bar() internal returns (uint) {\n'[39m +
+        [32m'    |   ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to view'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### Running /home/solc-js/regression/complex/slither/external_function.sol ...
+### ... with solver Eldarica Vanilla
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'9302'[39m,
+      formattedMessage: [32m'Warning: Return value of low-level calls not used.\n'[39m +
+        [32m'  --> test:37:9:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'37 |         three.call(abi.encode(bytes4(keccak256("helloTwo()"))));\n'[39m +
+        [32m'   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Return value of low-level calls not used.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2072'[39m,
+      formattedMessage: [32m'Warning: Unused local variable.\n'[39m +
+        [32m' --> test:3:9:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'3 |         uint256 i = 0;\n'[39m +
+        [32m'  |         ^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Unused local variable.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2072'[39m,
+      formattedMessage: [32m'Warning: Unused local variable.\n'[39m +
+        [32m' --> test:9:9:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'9 |         uint256 i = 0;\n'[39m +
+        [32m'  |         ^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Unused local variable.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2072'[39m,
+      formattedMessage: [32m'Warning: Unused local variable.\n'[39m +
+        [32m'  --> test:35:9:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'35 |         uint256 i = 0;\n'[39m +
+        [32m'   |         ^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Unused local variable.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to pure\n'[39m +
+        [32m' --> test:2:5:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'2 |     function funcCalled() external  {\n'[39m +
+        [32m'  |     ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to pure'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to pure\n'[39m +
+        [32m' --> test:8:5:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'8 |     function callWithSuper() public {\n'[39m +
+        [32m'  |     ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to pure'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to pure\n'[39m +
+        [32m'  --> test:27:5:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'27 |     function my_func() internal returns(bool){\n'[39m +
+        [32m'   |     ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to pure'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to pure\n'[39m +
+        [32m'  --> test:56:5:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'56 |     function test1() public returns(uint){\n'[39m +
+        [32m'   |     ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to pure'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to pure\n'[39m +
+        [32m'  --> test:60:5:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'60 |     function test2() public returns(uint){\n'[39m +
+        [32m'   |     ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to pure'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to pure\n'[39m +
+        [32m'  --> test:64:5:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'64 |     function test3() public returns(uint){\n'[39m +
+        [32m'   |     ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to pure'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'4588'[39m,
+      formattedMessage: [32m'Warning: Assertion checker does not yet implement this type of function call.\n'[39m +
+        [32m'  --> test:36:33:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'36 |         address three = address(new ContractWithFunctionNotCalled());\n'[39m +
+        [32m'   |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Assertion checker does not yet implement this type of function call.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'4588'[39m,
+      formattedMessage: [32m'Warning: Assertion checker does not yet implement this type of function call.\n'[39m +
+        [32m'  --> test:39:40:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'39 |         ContractWithFunctionCalled c = new ContractWithFunctionCalled();\n'[39m +
+        [32m'   |                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Assertion checker does not yet implement this type of function call.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+### ... with solver Spacer Quant
+### Entire output:
+{
+  errors: [
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3805'[39m,
+      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'1878'[39m,
+      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'3420'[39m,
+      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
+        [32m'--> test\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Source file does not specify required compiler version!'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'9302'[39m,
+      formattedMessage: [32m'Warning: Return value of low-level calls not used.\n'[39m +
+        [32m'  --> test:37:9:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'37 |         three.call(abi.encode(bytes4(keccak256("helloTwo()"))));\n'[39m +
+        [32m'   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Return value of low-level calls not used.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2072'[39m,
+      formattedMessage: [32m'Warning: Unused local variable.\n'[39m +
+        [32m' --> test:3:9:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'3 |         uint256 i = 0;\n'[39m +
+        [32m'  |         ^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Unused local variable.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2072'[39m,
+      formattedMessage: [32m'Warning: Unused local variable.\n'[39m +
+        [32m' --> test:9:9:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'9 |         uint256 i = 0;\n'[39m +
+        [32m'  |         ^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Unused local variable.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2072'[39m,
+      formattedMessage: [32m'Warning: Unused local variable.\n'[39m +
+        [32m'  --> test:35:9:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'35 |         uint256 i = 0;\n'[39m +
+        [32m'   |         ^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Unused local variable.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to pure\n'[39m +
+        [32m' --> test:2:5:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'2 |     function funcCalled() external  {\n'[39m +
+        [32m'  |     ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to pure'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to pure\n'[39m +
+        [32m' --> test:8:5:\n'[39m +
+        [32m'  |\n'[39m +
+        [32m'8 |     function callWithSuper() public {\n'[39m +
+        [32m'  |     ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to pure'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to pure\n'[39m +
+        [32m'  --> test:27:5:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'27 |     function my_func() internal returns(bool){\n'[39m +
+        [32m'   |     ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to pure'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to pure\n'[39m +
+        [32m'  --> test:56:5:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'56 |     function test1() public returns(uint){\n'[39m +
+        [32m'   |     ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to pure'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to pure\n'[39m +
+        [32m'  --> test:60:5:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'60 |     function test2() public returns(uint){\n'[39m +
+        [32m'   |     ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to pure'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'2018'[39m,
+      formattedMessage: [32m'Warning: Function state mutability can be restricted to pure\n'[39m +
+        [32m'  --> test:64:5:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'64 |     function test3() public returns(uint){\n'[39m +
+        [32m'   |     ^ (Relevant source part starts here and spans across multiple lines).\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Function state mutability can be restricted to pure'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'4588'[39m,
+      formattedMessage: [32m'Warning: Assertion checker does not yet implement this type of function call.\n'[39m +
+        [32m'  --> test:36:33:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'36 |         address three = address(new ContractWithFunctionNotCalled());\n'[39m +
+        [32m'   |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Assertion checker does not yet implement this type of function call.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'4588'[39m,
+      formattedMessage: [32m'Warning: Assertion checker does not yet implement this type of function call.\n'[39m +
+        [32m'  --> test:39:40:\n'[39m +
+        [32m'   |\n'[39m +
+        [32m'39 |         ContractWithFunctionCalled c = new ContractWithFunctionCalled();\n'[39m +
+        [32m'   |                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'Assertion checker does not yet implement this type of function call.'[39m,
+      severity: [32m'warning'[39m,
+      sourceLocation: [36m[Object][39m,
+      type: [32m'Warning'[39m
+    }
+  ],
+  sources: { test: { id: [33m0[39m } }
+}
+### End output
+{"/home/solc-js/regression/complex/MerkleProof.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/complex/warn_on_typecast.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/complex/slither/const_state_variables.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/complex/slither/data_dependency.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/complex/slither/external_function.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}]}

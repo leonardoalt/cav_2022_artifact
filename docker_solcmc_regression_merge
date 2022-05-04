@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+table="Category\t\tTotal\t\tEldarica\t\tSpacer Quant\n"
+for dir in ./regression/*
+do
+	cat=$(basename $dir)
+	echo $cat
+	res=$(tail -1 "tests/regression/$cat.txt")
+	echo $res
+	table="$table\n$res"
+done
+
+echo $table
