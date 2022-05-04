@@ -1,3 +1,32 @@
+# Structure and Content
+
+This README and the related artifact is designed for allowing
+independent reproduction of the results in the paper `SolCMC: Solidity
+Compiler's model checker`.  In addition it describes how the tool
+`SolCMC` can be used in other contexts.  A more thorough documentation on
+`SolCMC` is available
+[here](https://docs.soliditylang.org/en/v0.8.13/smtchecker.html).  Note
+that the tutorial uses the old name `smtchecker` of the tool, and
+explains also the BMC engine that is out of the scope of this artifact.
+
+The structure of this `README` is as follows.
+
+1. Set Up explains how to set up the environment using Docker.
+2. Available Commands describes the two shell scripts needed for reproducing
+   the experiments inside the docker image.
+3. Machine Specification describes the hardware and OS that were used for
+   producing the results in this artifact
+4. Smoke Test and Bigger Smoke Test describes how to test quickly
+   whether the artifact works
+5. Reproducing the Experiments of the Paper gives the required details
+   for reproduction.
+6. Usage Beyond the Paper explains how the artifact can be modified for
+   other model checking tasks
+7. Installation Outside the Docker Image describes alternate
+   ways of installation.
+8. Relevant Source Code gives pointers to the implementation of the
+   techniques.
+
 # Set Up
 
 ### Easiest
@@ -267,4 +296,23 @@ $ ./docker_solcmc experiments/ERC777 ERC777PropertySafe.sol ERC777Property 600 e
 ```
 the output will be generated on lines 82 -- 87.  The corresponding
 output is available in `tests/erc777_safe_eld_abstract_default.txt`.
+
+# Usage Beyond the Paper
+
+TODO
+
+# Installation Outside the Docker Image
+
+TODO
+
+# Relevant Source Code
+
+The implementation of the CHC encoding is in
+`https://github.com/ethereum/solidity/blob/develop/libsolidity/formal/CHC.h`
+and
+`https://github.com/ethereum/solidity/blob/develop/libsolidity/formal/CHC.cpp`
+
+In particular, the syntactic elements of the Solidity language
+are encoded to CHCs using the overridden `visit` and `endVisit`
+functions (e.g. `visit(ContractDefinition const &)`)
 
