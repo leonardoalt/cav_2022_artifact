@@ -46,6 +46,8 @@ You can also clone this repository and build the Docker image yourself:
 $ docker build -f Dockerfile-solcmc . --rm -t leoalt/cav
 ```
 
+When run for the first time, this takes approximately a minute.
+
 # Available Commands
 
 There are two available scripts to run the smart contract analysis with different
