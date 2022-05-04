@@ -2,10 +2,6 @@
 /home/solc-js/regression/math
 ### Running /home/solc-js/regression/math/addmod_1.sol ...
 ### ... with solver Eldarica Vanilla
-sat
-
-sat
-
 ### Entire output:
 {
   errors: [
@@ -45,10 +41,6 @@ sat
 }
 ### End output
 ### ... with solver Spacer Quant
-sat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -103,8 +95,6 @@ unsat
 ### End output
 ### Running /home/solc-js/regression/math/addmod_mulmod.sol ...
 ### ... with solver Eldarica Vanilla
-sat
-
 ### Entire output:
 {
   errors: [
@@ -144,8 +134,6 @@ sat
 }
 ### End output
 ### ... with solver Spacer Quant
-sat
-
 ### Entire output:
 {
   errors: [
@@ -186,14 +174,6 @@ sat
 ### End output
 ### Running /home/solc-js/regression/math/addmod_mulmod_zero.sol ...
 ### ... with solver Eldarica Vanilla
-sat
-
-sat
-
-sat
-
-sat
-
 ### Entire output:
 {
   errors: [
@@ -247,14 +227,6 @@ sat
 }
 ### End output
 ### ... with solver Spacer Quant
-unsat
-
-unsat
-
-sat
-
-sat
-
 ### Entire output:
 {
   errors: [
@@ -337,10 +309,6 @@ sat
 ### End output
 ### Running /home/solc-js/regression/math/addmulmod.sol ...
 ### ... with solver Eldarica Vanilla
-sat
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -389,10 +357,6 @@ unknown
 }
 ### End output
 ### ... with solver Spacer Quant
-sat
-
-sat
-
 ### Entire output:
 {
   errors: [
@@ -433,10 +397,6 @@ sat
 ### End output
 ### Running /home/solc-js/regression/math/mulmod_1.sol ...
 ### ... with solver Eldarica Vanilla
-sat
-
-sat
-
 ### Entire output:
 {
   errors: [
@@ -476,10 +436,6 @@ sat
 }
 ### End output
 ### ... with solver Spacer Quant
-sat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -532,5 +488,4 @@ unsat
   sources: { test: { id: [33m0[39m } }
 }
 ### End output
-{"/home/solc-js/regression/math/addmod_1.sol":[{"notProved":0,"unsafe":0},{"notProved":0,"unsafe":1}],"/home/solc-js/regression/math/addmod_mulmod.sol":[{"notProved":0,"unsafe":0},{"notProved":0,"unsafe":0}],"/home/solc-js/regression/math/addmod_mulmod_zero.sol":[{"notProved":0,"unsafe":0},{"notProved":0,"unsafe":2}],"/home/solc-js/regression/math/addmulmod.sol":[{"notProved":1,"unsafe":0},{"notProved":0,"unsafe":0}],"/home/solc-js/regression/math/mulmod_1.sol":[{"notProved":0,"unsafe":0},{"notProved":0,"unsafe":1}]}
 {"/home/solc-js/regression/math/addmod_1.sol":[{"notProved":0,"unsafe":0,"safe":1,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}],"/home/solc-js/regression/math/addmod_mulmod.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/math/addmod_mulmod_zero.sol":[{"notProved":0,"unsafe":0,"safe":2,"winner":true},{"notProved":0,"unsafe":2,"safe":0,"winner":true}],"/home/solc-js/regression/math/addmulmod.sol":[{"notProved":1,"unsafe":0,"safe":0,"winner":false},{"notProved":0,"unsafe":0,"safe":1,"winner":true}],"/home/solc-js/regression/math/mulmod_1.sol":[{"notProved":0,"unsafe":0,"safe":1,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}]}

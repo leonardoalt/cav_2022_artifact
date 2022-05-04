@@ -81,30 +81,6 @@
 ### End output
 ### Running /home/solc-js/regression/abi/abi_decode_array.sol ...
 ### ... with solver Eldarica Vanilla
-unsat
-
-sat
-
-unsat
-
-sat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -284,30 +260,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-unsat
-
-sat
-
-unsat
-
-sat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -488,24 +440,6 @@ unsat
 ### End output
 ### Running /home/solc-js/regression/abi/abi_decode_simple.sol ...
 ### ... with solver Eldarica Vanilla
-sat
-
-unsat
-
-sat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -643,24 +577,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-sat
-
-unsat
-
-sat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -780,14 +696,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_array_slice.sol ...
 ### ... with solver Eldarica Vanilla
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -852,30 +760,11 @@ unsat
     },
     {
       component: [32m'general'[39m,
-      errorCode: [32m'6328'[39m,
-      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
-        [32m'  --> test:15:3:\n'[39m +
-        [32m'   |\n'[39m +
-        [32m'15 | \t\tassert(b1.length == b4.length); // should fail\n'[39m +
-        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+      errorCode: [32m'5840'[39m,
+      formattedMessage: [32m'Warning: CHC: 2 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.\n'[39m +
         [32m'\n'[39m,
-      message: [32m'CHC: Assertion violation happens here.'[39m,
+      message: [32m'CHC: 2 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.'[39m,
       severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
-    },
-    {
-      component: [32m'general'[39m,
-      errorCode: [32m'6328'[39m,
-      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
-        [32m'  --> test:21:3:\n'[39m +
-        [32m'   |\n'[39m +
-        [32m'21 | \t\tassert(b1.length == b5.length); // fails for now\n'[39m +
-        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'CHC: Assertion violation happens here.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
       type: [32m'Warning'[39m
     }
   ],
@@ -883,14 +772,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-unsat
-
-unknown
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -954,14 +835,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_array_slice_2.sol ...
 ### ... with solver Eldarica Vanilla
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -1026,30 +899,11 @@ unsat
     },
     {
       component: [32m'general'[39m,
-      errorCode: [32m'6328'[39m,
-      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
-        [32m'  --> test:15:3:\n'[39m +
-        [32m'   |\n'[39m +
-        [32m'15 | \t\tassert(b1.length == b4.length); // should fail\n'[39m +
-        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+      errorCode: [32m'5840'[39m,
+      formattedMessage: [32m'Warning: CHC: 2 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.\n'[39m +
         [32m'\n'[39m,
-      message: [32m'CHC: Assertion violation happens here.'[39m,
+      message: [32m'CHC: 2 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.'[39m,
       severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
-    },
-    {
-      component: [32m'general'[39m,
-      errorCode: [32m'6328'[39m,
-      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
-        [32m'  --> test:22:3:\n'[39m +
-        [32m'   |\n'[39m +
-        [32m'22 | \t\tassert(b1.length == b5.length); // fails for now\n'[39m +
-        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'CHC: Assertion violation happens here.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
       type: [32m'Warning'[39m
     }
   ],
@@ -1057,14 +911,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-unsat
-
-unknown
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -1235,8 +1081,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_hash.sol ...
 ### ... with solver Eldarica Vanilla
-sat
-
 ### Entire output:
 {
   errors: [
@@ -1276,8 +1120,6 @@ sat
 }
 ### End output
 ### ... with solver Spacer Quant
-sat
-
 ### Entire output:
 {
   errors: [
@@ -1318,18 +1160,6 @@ sat
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_no_arguments.sol ...
 ### ... with solver Eldarica Vanilla
-sat
-
-unsat
-
-sat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -1425,18 +1255,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-sat
-
-unsat
-
-sat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -1533,16 +1351,6 @@ unsat
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_packed_array_slice.sol ...
 ### ... with solver Eldarica Vanilla
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -1607,44 +1415,11 @@ unsat
     },
     {
       component: [32m'general'[39m,
-      errorCode: [32m'6328'[39m,
-      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
-        [32m'  --> test:16:3:\n'[39m +
-        [32m'   |\n'[39m +
-        [32m'16 | \t\tassert(b1.length == b4.length); // should fail\n'[39m +
-        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+      errorCode: [32m'5840'[39m,
+      formattedMessage: [32m'Warning: CHC: 3 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.\n'[39m +
         [32m'\n'[39m,
-      message: [32m'CHC: Assertion violation happens here.'[39m,
+      message: [32m'CHC: 3 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.'[39m,
       severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
-    },
-    {
-      component: [32m'general'[39m,
-      errorCode: [32m'6328'[39m,
-      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
-        [32m'  --> test:22:3:\n'[39m +
-        [32m'   |\n'[39m +
-        [32m'22 | \t\tassert(b1.length == b5.length); // fails for now\n'[39m +
-        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'CHC: Assertion violation happens here.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
-    },
-    {
-      component: [32m'general'[39m,
-      errorCode: [32m'6328'[39m,
-      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
-        [32m'  --> test:26:3:\n'[39m +
-        [32m'   |\n'[39m +
-        [32m'26 | \t\tassert(b4.length == b6.length); // should fail\n'[39m +
-        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'CHC: Assertion violation happens here.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
       type: [32m'Warning'[39m
     }
   ],
@@ -1652,16 +1427,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-unsat
-
-unknown
-
-unknown
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -1725,16 +1490,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_packed_array_slice_2.sol ...
 ### ... with solver Eldarica Vanilla
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -1799,44 +1554,11 @@ unsat
     },
     {
       component: [32m'general'[39m,
-      errorCode: [32m'6328'[39m,
-      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
-        [32m'  --> test:15:3:\n'[39m +
-        [32m'   |\n'[39m +
-        [32m'15 | \t\tassert(b1.length == b4.length); // should fail\n'[39m +
-        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+      errorCode: [32m'5840'[39m,
+      formattedMessage: [32m'Warning: CHC: 3 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.\n'[39m +
         [32m'\n'[39m,
-      message: [32m'CHC: Assertion violation happens here.'[39m,
+      message: [32m'CHC: 3 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.'[39m,
       severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
-    },
-    {
-      component: [32m'general'[39m,
-      errorCode: [32m'6328'[39m,
-      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
-        [32m'  --> test:22:3:\n'[39m +
-        [32m'   |\n'[39m +
-        [32m'22 | \t\tassert(b1.length == b5.length); // fails for now\n'[39m +
-        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'CHC: Assertion violation happens here.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
-    },
-    {
-      component: [32m'general'[39m,
-      errorCode: [32m'6328'[39m,
-      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
-        [32m'  --> test:26:3:\n'[39m +
-        [32m'   |\n'[39m +
-        [32m'26 | \t\tassert(b4.length == b6.length); // should fail\n'[39m +
-        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'CHC: Assertion violation happens here.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
       type: [32m'Warning'[39m
     }
   ],
@@ -1844,16 +1566,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-unsat
-
-unknown
-
-unknown
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -1917,10 +1629,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_packed_hash.sol ...
 ### ... with solver Eldarica Vanilla
-sat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -1974,10 +1682,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-sat
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -2027,18 +1731,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_packed_simple.sol ...
 ### ... with solver Eldarica Vanilla
-sat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -2148,18 +1840,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-sat
-
-unknown
-
-unknown
-
-unknown
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -2209,16 +1889,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_packed_string_literal.sol ...
 ### ... with solver Eldarica Vanilla
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -2328,16 +1998,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-unknown
-
-unknown
-
-unknown
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -2387,16 +2047,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_packed_string_literal_no_unproved.sol ...
 ### ... with solver Eldarica Vanilla
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -2506,16 +2156,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-unknown
-
-unknown
-
-unknown
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -2565,16 +2205,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_simple.sol ...
 ### ... with solver Eldarica Vanilla
-sat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -2670,16 +2300,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-sat
-
-unknown
-
-unknown
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -2729,14 +2349,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_string_literal.sol ...
 ### ... with solver Eldarica Vanilla
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -2832,14 +2444,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-unknown
-
-unknown
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -2889,16 +2493,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_with_selector_array_slice.sol ...
 ### ... with solver Eldarica Vanilla
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -3008,16 +2602,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-unsat
-
-unknown
-
-unknown
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -3081,16 +2665,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_with_selector_array_slice_2.sol ...
 ### ... with solver Eldarica Vanilla
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -3200,16 +2774,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-unsat
-
-unknown
-
-unknown
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -3273,12 +2837,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_with_selector_hash.sol ...
 ### ... with solver Eldarica Vanilla
-sat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -3346,12 +2904,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-sat
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -3401,18 +2953,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_with_selector_simple.sol ...
 ### ... with solver Eldarica Vanilla
-sat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -3522,18 +3062,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-sat
-
-unknown
-
-unknown
-
-unknown
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -3583,16 +3111,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_with_selector_string_literal.sol ...
 ### ... with solver Eldarica Vanilla
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -3702,16 +3220,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-unknown
-
-unknown
-
-unknown
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -3761,8 +3269,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_with_selector_string_literal_2.sol ...
 ### ... with solver Eldarica Vanilla
-sat
-
 ### Entire output:
 {
   errors: [
@@ -3802,8 +3308,6 @@ sat
 }
 ### End output
 ### ... with solver Spacer Quant
-sat
-
 ### Entire output:
 {
   errors: [
@@ -3844,8 +3348,6 @@ sat
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_with_selector_vs_sig.sol ...
 ### ... with solver Eldarica Vanilla
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -3899,8 +3401,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -3950,16 +3450,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_with_sig_array_slice.sol ...
 ### ... with solver Eldarica Vanilla
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -4026,20 +3516,6 @@ unsat
       component: [32m'general'[39m,
       errorCode: [32m'6328'[39m,
       formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
-        [32m'  --> test:13:3:\n'[39m +
-        [32m'   |\n'[39m +
-        [32m'13 | \t\tassert(b1.length == b4.length); // should fail\n'[39m +
-        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'CHC: Assertion violation happens here.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
-    },
-    {
-      component: [32m'general'[39m,
-      errorCode: [32m'6328'[39m,
-      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
         [32m'  --> test:19:3:\n'[39m +
         [32m'   |\n'[39m +
         [32m'19 | \t\tassert(b1.length == b5.length); // fails for now\n'[39m +
@@ -4063,22 +3539,21 @@ unsat
       severity: [32m'warning'[39m,
       sourceLocation: [36m[Object][39m,
       type: [32m'Warning'[39m
+    },
+    {
+      component: [32m'general'[39m,
+      errorCode: [32m'5840'[39m,
+      formattedMessage: [32m'Warning: CHC: 1 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.\n'[39m +
+        [32m'\n'[39m,
+      message: [32m'CHC: 1 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.'[39m,
+      severity: [32m'warning'[39m,
+      type: [32m'Warning'[39m
     }
   ],
   sources: { test: { id: [33m0[39m } }
 }
 ### End output
 ### ... with solver Spacer Quant
-unsat
-
-unknown
-
-unknown
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -4142,16 +3617,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_with_sig_array_slice_2.sol ...
 ### ... with solver Eldarica Vanilla
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -4244,16 +3709,11 @@ unsat
     },
     {
       component: [32m'general'[39m,
-      errorCode: [32m'6328'[39m,
-      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
-        [32m'  --> test:22:3:\n'[39m +
-        [32m'   |\n'[39m +
-        [32m'22 | \t\tassert(b4.length == b6.length); // should fail\n'[39m +
-        [32m'   | \t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'[39m +
+      errorCode: [32m'5840'[39m,
+      formattedMessage: [32m'Warning: CHC: 1 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.\n'[39m +
         [32m'\n'[39m,
-      message: [32m'CHC: Assertion violation happens here.'[39m,
+      message: [32m'CHC: 1 verification condition(s) could not be proved. Enable the model checker option "show unproved" to see all of them. Consider choosing a specific contract to be verified in order to reduce the solving problems. Consider increasing the timeout per query.'[39m,
       severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
       type: [32m'Warning'[39m
     }
   ],
@@ -4261,16 +3721,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-unsat
-
-unknown
-
-unknown
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -4334,12 +3784,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_with_sig_hash.sol ...
 ### ... with solver Eldarica Vanilla
-sat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -4407,12 +3851,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-sat
-
-unsat
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -4476,18 +3914,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_with_sig_simple.sol ...
 ### ... with solver Eldarica Vanilla
-sat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -4597,18 +4023,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-sat
-
-unknown
-
-unknown
-
-unknown
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -4658,16 +4072,6 @@ unknown
 ### End output
 ### Running /home/solc-js/regression/abi/abi_encode_with_sig_string_literal.sol ...
 ### ... with solver Eldarica Vanilla
-unsat
-
-unsat
-
-unsat
-
-unsat
-
-unsat
-
 ### Entire output:
 {
   errors: [
@@ -4777,16 +4181,6 @@ unsat
 }
 ### End output
 ### ... with solver Spacer Quant
-unknown
-
-unknown
-
-unknown
-
-unknown
-
-unknown
-
 ### Entire output:
 {
   errors: [
@@ -4834,5 +4228,4 @@ unknown
   sources: { test: { id: [33m0[39m } }
 }
 ### End output
-{"/home/solc-js/regression/abi/abi_decode_1_tuple.sol":[{"notProved":0,"unsafe":0},{"notProved":0,"unsafe":0}],"/home/solc-js/regression/abi/abi_decode_array.sol":[{"notProved":0,"unsafe":10},{"notProved":0,"unsafe":10}],"/home/solc-js/regression/abi/abi_decode_simple.sol":[{"notProved":0,"unsafe":7},{"notProved":2,"unsafe":5}],"/home/solc-js/regression/abi/abi_encode_array_slice.sol":[{"notProved":0,"unsafe":4},{"notProved":3,"unsafe":1}],"/home/solc-js/regression/abi/abi_encode_array_slice_2.sol":[{"notProved":0,"unsafe":4},{"notProved":3,"unsafe":1}],"/home/solc-js/regression/abi/abi_encode_function.sol":[{"notProved":0,"unsafe":0},{"notProved":0,"unsafe":0}],"/home/solc-js/regression/abi/abi_encode_hash.sol":[{"notProved":0,"unsafe":0},{"notProved":0,"unsafe":0}],"/home/solc-js/regression/abi/abi_encode_no_arguments.sol":[{"notProved":0,"unsafe":4},{"notProved":0,"unsafe":4}],"/home/solc-js/regression/abi/abi_encode_packed_array_slice.sol":[{"notProved":0,"unsafe":5},{"notProved":4,"unsafe":1}],"/home/solc-js/regression/abi/abi_encode_packed_array_slice_2.sol":[{"notProved":0,"unsafe":5},{"notProved":4,"unsafe":1}],"/home/solc-js/regression/abi/abi_encode_packed_hash.sol":[{"notProved":0,"unsafe":1},{"notProved":1,"unsafe":0}],"/home/solc-js/regression/abi/abi_encode_packed_simple.sol":[{"notProved":0,"unsafe":5},{"notProved":5,"unsafe":0}],"/home/solc-js/regression/abi/abi_encode_packed_string_literal.sol":[{"notProved":0,"unsafe":5},{"notProved":5,"unsafe":0}],"/home/solc-js/regression/abi/abi_encode_packed_string_literal_no_unproved.sol":[{"notProved":0,"unsafe":5},{"notProved":5,"unsafe":0}],"/home/solc-js/regression/abi/abi_encode_simple.sol":[{"notProved":0,"unsafe":4},{"notProved":4,"unsafe":0}],"/home/solc-js/regression/abi/abi_encode_string_literal.sol":[{"notProved":0,"unsafe":4},{"notProved":4,"unsafe":0}],"/home/solc-js/regression/abi/abi_encode_with_selector_array_slice.sol":[{"notProved":0,"unsafe":5},{"notProved":4,"unsafe":1}],"/home/solc-js/regression/abi/abi_encode_with_selector_array_slice_2.sol":[{"notProved":0,"unsafe":5},{"notProved":4,"unsafe":1}],"/home/solc-js/regression/abi/abi_encode_with_selector_hash.sol":[{"notProved":0,"unsafe":2},{"notProved":2,"unsafe":0}],"/home/solc-js/regression/abi/abi_encode_with_selector_simple.sol":[{"notProved":0,"unsafe":5},{"notProved":5,"unsafe":0}],"/home/solc-js/regression/abi/abi_encode_with_selector_string_literal.sol":[{"notProved":0,"unsafe":5},{"notProved":5,"unsafe":0}],"/home/solc-js/regression/abi/abi_encode_with_selector_string_literal_2.sol":[{"notProved":0,"unsafe":0},{"notProved":0,"unsafe":0}],"/home/solc-js/regression/abi/abi_encode_with_selector_vs_sig.sol":[{"notProved":0,"unsafe":1},{"notProved":1,"unsafe":0}],"/home/solc-js/regression/abi/abi_encode_with_sig_array_slice.sol":[{"notProved":0,"unsafe":5},{"notProved":4,"unsafe":1}],"/home/solc-js/regression/abi/abi_encode_with_sig_array_slice_2.sol":[{"notProved":0,"unsafe":5},{"notProved":4,"unsafe":1}],"/home/solc-js/regression/abi/abi_encode_with_sig_hash.sol":[{"notProved":0,"unsafe":2},{"notProved":1,"unsafe":1}],"/home/solc-js/regression/abi/abi_encode_with_sig_simple.sol":[{"notProved":0,"unsafe":5},{"notProved":5,"unsafe":0}],"/home/solc-js/regression/abi/abi_encode_with_sig_string_literal.sol":[{"notProved":0,"unsafe":5},{"notProved":5,"unsafe":0}]}
-{"/home/solc-js/regression/abi/abi_decode_1_tuple.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/abi/abi_decode_array.sol":[{"notProved":0,"unsafe":10,"safe":0,"winner":true},{"notProved":0,"unsafe":10,"safe":0,"winner":true}],"/home/solc-js/regression/abi/abi_decode_simple.sol":[{"notProved":0,"unsafe":7,"safe":0,"winner":true},{"notProved":2,"unsafe":5,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_array_slice.sol":[{"notProved":0,"unsafe":4,"safe":0,"winner":true},{"notProved":3,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_array_slice_2.sol":[{"notProved":0,"unsafe":4,"safe":0,"winner":true},{"notProved":3,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_function.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/abi/abi_encode_hash.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/abi/abi_encode_no_arguments.sol":[{"notProved":0,"unsafe":4,"safe":0,"winner":true},{"notProved":0,"unsafe":4,"safe":0,"winner":true}],"/home/solc-js/regression/abi/abi_encode_packed_array_slice.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":4,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_packed_array_slice_2.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":4,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_packed_hash.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":1,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_packed_simple.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":5,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_packed_string_literal.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":5,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_packed_string_literal_no_unproved.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":5,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_simple.sol":[{"notProved":0,"unsafe":4,"safe":0,"winner":true},{"notProved":4,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_string_literal.sol":[{"notProved":0,"unsafe":4,"safe":0,"winner":true},{"notProved":4,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_selector_array_slice.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":4,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_selector_array_slice_2.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":4,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_selector_hash.sol":[{"notProved":0,"unsafe":2,"safe":0,"winner":true},{"notProved":2,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_selector_simple.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":5,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_selector_string_literal.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":5,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_selector_string_literal_2.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/abi/abi_encode_with_selector_vs_sig.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":1,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_sig_array_slice.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":4,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_sig_array_slice_2.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":4,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_sig_hash.sol":[{"notProved":0,"unsafe":2,"safe":0,"winner":true},{"notProved":1,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_sig_simple.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":5,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_sig_string_literal.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":5,"unsafe":0,"safe":0,"winner":false}]}
+{"/home/solc-js/regression/abi/abi_decode_1_tuple.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/abi/abi_decode_array.sol":[{"notProved":0,"unsafe":10,"safe":0,"winner":true},{"notProved":0,"unsafe":10,"safe":0,"winner":true}],"/home/solc-js/regression/abi/abi_decode_simple.sol":[{"notProved":0,"unsafe":7,"safe":0,"winner":true},{"notProved":2,"unsafe":5,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_array_slice.sol":[{"notProved":2,"unsafe":2,"safe":0,"winner":true},{"notProved":3,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_array_slice_2.sol":[{"notProved":2,"unsafe":2,"safe":0,"winner":true},{"notProved":3,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_function.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/abi/abi_encode_hash.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/abi/abi_encode_no_arguments.sol":[{"notProved":0,"unsafe":4,"safe":0,"winner":true},{"notProved":0,"unsafe":4,"safe":0,"winner":true}],"/home/solc-js/regression/abi/abi_encode_packed_array_slice.sol":[{"notProved":3,"unsafe":2,"safe":0,"winner":true},{"notProved":4,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_packed_array_slice_2.sol":[{"notProved":3,"unsafe":2,"safe":0,"winner":true},{"notProved":4,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_packed_hash.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":1,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_packed_simple.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":5,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_packed_string_literal.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":5,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_packed_string_literal_no_unproved.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":5,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_simple.sol":[{"notProved":0,"unsafe":4,"safe":0,"winner":true},{"notProved":4,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_string_literal.sol":[{"notProved":0,"unsafe":4,"safe":0,"winner":true},{"notProved":4,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_selector_array_slice.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":4,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_selector_array_slice_2.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":4,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_selector_hash.sol":[{"notProved":0,"unsafe":2,"safe":0,"winner":true},{"notProved":2,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_selector_simple.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":5,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_selector_string_literal.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":5,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_selector_string_literal_2.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/abi/abi_encode_with_selector_vs_sig.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":1,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_sig_array_slice.sol":[{"notProved":1,"unsafe":4,"safe":0,"winner":true},{"notProved":4,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_sig_array_slice_2.sol":[{"notProved":1,"unsafe":4,"safe":0,"winner":true},{"notProved":4,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_sig_hash.sol":[{"notProved":0,"unsafe":2,"safe":0,"winner":true},{"notProved":1,"unsafe":1,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_sig_simple.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":5,"unsafe":0,"safe":0,"winner":false}],"/home/solc-js/regression/abi/abi_encode_with_sig_string_literal.sol":[{"notProved":0,"unsafe":5,"safe":0,"winner":true},{"notProved":5,"unsafe":0,"safe":0,"winner":false}]}
