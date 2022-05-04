@@ -364,10 +364,6 @@ since it could not solve one query in one of them.
 
 TODO
 
-# Usage Beyond the Paper
-
-TODO
-
 # Installation Outside the Docker Image
 
 This quick installation guide should work for any unix machine.  It has
@@ -436,6 +432,65 @@ This produces the file `soljson.js` in the working directory.  Copy this
 file to where you have `solc-js` source code instead of copying the file
 `soljson.js` from this artifact to `solc-js` (see the previous section).
 It is now possible to SolCMC with the locally compiled `Wasm` `solc`.
+
+# Usage Beyond the Paper
+
+`SolCMC` is being increasingly used in the field.  For example the cyber
+security company [AON](https://www.aon.com/) recently published a [blog
+article](https://www.aon.com/cyber-solutions/aon_cyber_labs/exploring-soliditys-model-checker/)
+on its use, showcasing a simple "button pressing puzzle" as an example.
+The code is essentially as follows:
+
+```
+$ cat aon-example/contract.sol
+contract C {
+  bool a; bool b; bool c; bool d; bool e; bool f;
+  function pressA() public { if (e) { a = true; } else { reset(); } }
+  function pressB() public { if (c) { b = true; } else { reset(); } }
+  function pressC() public { if (a) { c = true; } else { reset(); } }
+  function pressD() public { d = true; }
+  function pressE() public { if (d) { e = true; } else { reset(); } }
+  function pressF() public { if (b) { f = true; } else { reset(); } }
+  function is_not_solved() view public { assert(!f); }
+  function reset() internal {
+    a = false; b = false; c = false; d = false; e = false; f = false;
+  }
+}
+```
+
+The above assertion is reachable throug "pressing the buttons" D, E, A,
+C, B, F.  This reachability is quickly verified by solcmc, e.g., by
+running the local installation set up in the previous section:
+
+```
+$ ts-node run.ts ~/tmp/solc-example contract.sol C 60 z3 aon-example contract.sol C 60 z3
+##### Solver z3 cex:
+Warning: CHC: Assertion violation happens here.
+ --> fileName:9:42:
+  |
+9 |   function is_not_solved() view public { assert(!f); }
+  |                                          ^^^^^^^^^^
+
+
+##### End counterexample
+```
+
+(Note that in order to model-check the example with the docker scripts, the file
+needs to be copied inside the docker image)
+
+Changing the contract by substituting the function `pressF()` above with
+```
+  function pressF() public { if (b) { e = true; } else { reset(); } }
+```
+results in the assertion becoming unreachable, which can again be shown
+with `SolCMC`.
+```
+$ ts-node run.ts ~/tmp/solc-example contract.sol C 60 z3 aon-example contract-mod.sol C 60 z3
+### Running with solver z3
+### Entire output:
+{ errors: [], sources: { fileName: { id: 0 } } }
+### End output
+```
 
 # Relevant Source Code
 
