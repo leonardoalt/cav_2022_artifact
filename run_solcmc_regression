@@ -1,3 +1,14 @@
 cd /home/solc-js/
 dir=`pwd`
-ts-node run_regression.ts "$dir" $@
+
+tmpfile=$(mktemp /tmp/solcmc_regression.XXXXXX)
+
+ts-node run_regression.ts "$dir" $@ &> "$tmpfile"
+
+cat "$tmpfile"
+
+tmpjson="$tmpfile.json"
+
+tail -1 "$tmpfile" > "$tmpjson"
+
+python ./regression_format.py "$tmpjson" $1

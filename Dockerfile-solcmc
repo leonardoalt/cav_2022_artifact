@@ -29,9 +29,16 @@ RUN cd /home/                                                            \
     && cd /home/solc-js/                                                 \
     && npm install
 
+COPY soljson.js /home/solc-js/soljson.js
+
+RUN pacman --noconfirm -Sy --noprogressbar python-matplotlib
+
+RUN mkdir -p /home/matplotlib && chmod 777 /home/matplotlib
+ENV MPLCONFIGDIR="/home/matplotlib"
+
 COPY regression /home/solc-js/regression
 
 COPY run.ts /home/solc-js/
 COPY run_all_solvers.ts /home/solc-js/
 COPY run_regression.ts /home/solc-js/
-COPY soljson.js /home/solc-js/soljson.js
+COPY regression_format.py /home/solc-js/

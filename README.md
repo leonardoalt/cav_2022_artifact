@@ -30,7 +30,7 @@ The structure of this `README` is as follows.
 # Set Up
 
 The experiments below require a common modern UNIX OS.  The extra required
-packages are `docker` and `python`.
+package is `docker`.
 
 ## Easiest
 
