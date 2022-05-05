@@ -3,10 +3,10 @@
 This README and the related artifact is designed for allowing
 independent reproduction of the results in the paper `SolCMC: Solidity
 Compiler's model checker`.  In addition it describes how the tool
-`SolCMC` can be used in other contexts.  A more thorough documentation on
-`SolCMC` is available
+SolCMC can be used in other contexts.  A more thorough documentation on
+SolCMC is available
 [here](https://docs.soliditylang.org/en/v0.8.13/smtchecker.html).  Note
-that the tutorial uses the old name `smtchecker` of the tool, and
+that the tutorial uses the old name `SMTChecker` of the tool, and
 explains also the BMC engine that is out of the scope of this artifact.
 
 The structure of this `README` is as follows.
@@ -307,7 +307,7 @@ output is available in `tests/erc777_safe_eld_abstract_default.txt`.
 The regression tests can be found in `regression/`. Inside that directory, the
 tests are separated by category.
 
-In this experiment we compare the default version of Eldarica and z3 with the
+In this experiment we compare the default version of Eldarica and z3/Spacer with the
 parameters `rewriter.pull_cheap_ite=true fp.spacer.q3.use_qgen=true
 fp.spacer.mbqi=false fp.spacer.ground_pobs=false"`.
 
@@ -364,27 +364,60 @@ A few categories have wrong benchmarks
 
 TODO
 
-# Installation Outside the Docker Image
+# Installation and Usage Outside the Docker Image
 
-We detail two ways of installing SolCMC: one using pre-built binary,
-and the other compiling the system from locally fetched sources.
+The experiments presented in this artifact use SolCMC code that has not yet
+been merged into the main compiler. The extra code can be found in branch
+[smt_eldarica_cex](https://github.com/ethereum/solidity/tree/smt_eldarica_cex)
+of the same repository, and adds the ability of translating counterexamples and
+invariants from Eldarica back to the user. The release binaries already have
+that ability for z3/Spacer, but not yet for Eldarica.
 
-## Quick installation using pre-built binary
+Below we present how users interested in running SolCMC can access the tool and
+combine it with different Horn solvers, using the official Solidity releases
+and sources, followed by a section showing how to modify the tool and use it
+for the experiments in this artifact.
 
-This quick installation guide should work for any unix machine.  It has
-been tested in arch linux, ubuntu and OS X. Currently only z3/spacer is
-supported as the CHC engine.
+## Easiest: pre-built binaries with z3/Spacer only
 
-First install `z3`, available from
-[the z3 github repository](https://github.com/z3prover/z3) and many
-package managers.
+This quick installation guide should work for any UNIX machine.  It has
+been tested in Arch Linux, Ubuntu and OS X. Currently only z3/Spacer is
+supported as the CHC engine in these binaries.
+
+If on Linux (no need on OSX), first install z3 and its dynamic library,
+available from [the z3 github repository](https://github.com/z3prover/z3) and
+most package managers.  The z3 version must be <= 4.8.14, since SolcMC does not
+yet fully support z3 >=4.8.15.
+
+Get the Linux or OSX `solc` binary from the [official
+releases](https://github.com/ethereum/solidity/releases).
+
+Now SolCMC can be run on the examples provided in this artifact outside Docker,
+directly through the downloaded binary.  For example:
+
+```
+$ ./solc examples/BinaryMachineUnsafe.sol --model-checker-engine chc
+```
+
+The other settings are described in
+[](https://docs.soliditylang.org/en/v0.8.13/smtchecker.html#smtchecker-options-and-tuning).
+
+That's it! The example above shows that SolCMC can easily be used by any
+Solidity developer who has access to the compiler itself.
+
+## Less easy: pre-built binaries with Eldarica/any Horn solver
+
+Besides the tight API integration that SolCMC has with z3/Spacer, any Horn
+solver can be used via the [compiler SMT
+callback](https://github.com/ethereum/solc-js#example-usage-with-smtsolver-callback).
 
 Install ts-node:
+
 ```
 $ npm install -g ts-node
 ```
 
-Fetch the `javascript` bindings for `solc`.
+Fetch the `JavasSript` bindings for `solc`.
 
 ```
 $ git clone https://github.com/ethereum/solc-js.git
@@ -392,82 +425,104 @@ $ cd solc-js
 $ npm install
 ```
 
-Get the most recent release of the `solc` compiler (compiled into `Wasm`):
+Get the WebAssembly `solc` binary (`soljson.js`) from the [official
+releases](https://github.com/ethereum/solidity/releases).
 
-```
-$ wget -O soljson.js https://github.com/ethereum/solc-bin/raw/gh-pages/bin/soljson-latest.js
-```
-
-The solidity compiler, being highly configurable and backwards
-compatible with different language versions, is typically configured
-using java-script bindings.  To this end, this artifact provides a
-java-script configuration file that immediately allows using `solcmc`.
-Copy the run script from this artifact to the top level of `solc-js`:
+The Solidity compiler, being highly configurable and backwards compatible with
+different language versions, is often configured using JavaScript bindings.  To
+this end, this artifact provides a JavaScript configuration file that
+immediately allows using SolCMC.  Copy the run script from this artifact to the
+top level of `solc-js`:
 
 ```
 $ cp <path-to-artifact>/run.ts .
 ```
 
-Now `SolCMC` can be run on the examples provided in this artifact
-outside Docker.  For example:
+Similarly to the previous section, we can run SolCMC outside Docker, but with
+Eldarica:
+
 ```
-$ ts-node run.ts <path-to-artifact>/examples smoke_unsafe.sol Smoke 60 z3
+$ ts-node run.ts <path-to-artifact>/examples smoke_unsafe.sol Smoke 60 eld -horn
 ```
 
-## Installing by compiling `solc`
+In fact, any Horn solver's command line binary can be used in the call above
+instead of Eldarica. At the moment this is the only way to run Horn solvers
+besides z3/Spacer.
 
-This installation method is required if the use wants to change the
-solidity source code.  It also allows running eldarica, currently
-unsupported in the releases of solc and solc-js.
+## Compiling `solc` from Sources
 
-First install `z3` and `eldarica` in order to have a CHC engine.  In
-order to use `eldarica`, make sure that the directory containing
-`eldarica` is in the search path.  `z3` is available from
-[the z3 github repository](https://github.com/z3prover/z3) and
-`Eldarica` respectively from [the Eldarica github
-repository](https://github.com/uuverifiers/eldarica.git).
+This is the case if someone wishes to compile `solc` by themselves, or change
+the source code.
 
-### Compiling `solc` into `Wasm`
+The Solidity sources can be fetched via
 
-The compilation of `solc` into `Wasm` is done in a docker image designed
-for this.  Below we first fetch `solc` source code from github, and then
-compile `solc` into `wasm` using a script provided in the continuous
-integration of `solc` (`./scripts/ci/bild_emscripten.sh`).
+```
+$ git clone --recursive https://github.com/ethereum/solidity.git
+```
+
+To compile `solc` from its sources instead of using the Linux/OSX pre-built
+binaries, please follow the [official
+guideline](https://docs.soliditylang.org/en/v0.8.13/installing-solidity.html#building-from-source).
+
+To compile `solc` from sources into WebAssembly, install `docker` and run
+
+```
+$ ./<solidity_root>/scripts/build_emscripten.sh
+```
+
+This will create the binary `soljson.js`, which can be used to run SolCMC with
+any Horn solver, as described in the previous section.
+
+Note: You might have to update the script `<solidity_root>/scripts/build_emscripten.sh`
+to not require a strict z3 version for the compilation to go through
+(`-DSTRICT_Z3_VERSION=OFF`), since the docker image for emscripten might
+have a different z3 version as yours.
+
+## Compiling/Modifying SolCMC for the Artifact's Experiments
+
+As mentioned previously, our tool's binary used for the paper's experiments
+come from a specific branch in the Solidity repository. The JavaScript bindings
+we use also come from a specific branch in the solc-js repository. Therefore we
+need a mix of the two previous sections to modify the tools code and recompile
+it for the experiments.
 
 ```
 $ git clone --recursive --branch smt_eldarica_cex https://github.com/ethereum/solidity.git
 $ cd solidity
-$ docker image pull solbuildpackpusher/solidity-buildpack-deps:emscripten-9
-$ docker run -t --rm -v $(pwd):/root/project --workdir /root/project solbuildpackpusher/solidity-buildpack-deps:emscripten-9 /bin/sh ./scripts/ci/build_emscripten.sh
+$ ./scripts/build_emscripten.sh
 ```
 
-The end product is the file `soljson.js`, the `Wasm` compilation of
-`solc`.
+The end product is the file `soljson.js`, the `Wasm` compilation of `solc`.
 
-Note: You might have to update the script `./scripts/ci/build_emscripten.sh`
-to not require strict z3 version for the compilation to go through
-(`-DSTRICT_Z3_VERSION=OFF`), since the docker image for emscripten might
-not be synchronized with the branch `smt_eldarica_cex`.
-
-Fetch the `javascript` bindings for `solc`.
+Install `ts-node` and fetch the `JavaScript` bindings for `solc`:
 
 ```
+$ npm install -g ts-node
 $ git clone --branch cav_artifact https://github.com/ethereum/solc-js.git
 $ cd solc-js
 $ npm install
 ```
 
-Copy the file `soljson.js` to root of `solc-js` source code.  It is now
-possible to SolCMC with the locally compiled `Wasm` `solc` (see the
-previous section).
+Copy the file `soljson.js` to the root directory of `solc-js`.  It is now
+possible to SolCMC with the locally compiled WebAssembly binary of `solc` (see
+the previous section).
+
+To use the newly generated binary in this artifact's experiments, simply copy
+the generated `soljson.js` into this artifact's directory and re-build the
+Docker image using the `docker build` command given at the beginning of this
+file.
 
 # Usage Beyond the Paper
 
-`SolCMC` is being increasingly used in the field.  For example the cyber
-security company [AON](https://www.aon.com/) recently published a [blog
+SolCMC is being increasingly used in the field. Auditors, security experts, and
+advanced users often make use of the tool to prove invariants and find
+counterexamples. One example is the use of the tool to [prove correcntess of a
+Solidity library](https://github.com/Zellic/publications/tree/master/BokkyPooBahsDateTimeLibrary).
+As another example, the cyber security company [AON](https://www.aon.com/)
+recently published a [blog
 article](https://www.aon.com/cyber-solutions/aon_cyber_labs/exploring-soliditys-model-checker/)
-on its use, showcasing a simple "button pressing puzzle" as an example.
-The code is essentially as follows:
+on its use, showcasing a simple "button pressing puzzle" as an example.  The
+code is essentially as follows:
 
 ```
 $ cat aon-example/contract.sol
@@ -486,38 +541,121 @@ contract C {
 }
 ```
 
-The assertion in the code is reachable throug "pressing the buttons" D,
-E, A, C, B, F.  This reachability is quickly verified by solcmc, e.g.,
-by running the local installation set up in the previous section:
+The assertion in the code is reachable through "pressing the buttons" D, E, A,
+C, B, F.  This reachability is quickly verified by SolCMC, e.g., by running the
+release set up in the previous section:
 
 ```
-$ ts-node run.ts ~/tmp/solc-example contract.sol C 60 z3 aon-example contract.sol C 60 z3
-##### Solver z3 cex:
+$ ./solc aon-example/contract.sol --model-checker-engine chc --model-checker-timeout 20000
 Warning: CHC: Assertion violation happens here.
- --> fileName:9:42:
+Counterexample:
+a = true, b = true, c = true, d = true, e = true, f = true
+
+Transaction trace:
+C.constructor()
+State: a = false, b = false, c = false, d = false, e = false, f = false
+C.pressD()
+State: a = false, b = false, c = false, d = true, e = false, f = false
+C.pressE()
+State: a = false, b = false, c = false, d = true, e = true, f = false
+C.pressA()
+State: a = true, b = false, c = false, d = true, e = true, f = false
+C.pressC()
+State: a = true, b = false, c = true, d = true, e = true, f = false
+C.pressB()
+State: a = true, b = true, c = true, d = true, e = true, f = false
+C.pressF()
+State: a = true, b = true, c = true, d = true, e = true, f = true
+C.is_not_solved()
+ --> aon.sol:9:42:
   |
 9 |   function is_not_solved() view public { assert(!f); }
   |                                          ^^^^^^^^^^
-
-
-##### End counterexample
 ```
 
-Note that in order to model-check the example with the docker scripts,
-the file needs to be copied inside the docker image.
+To run with Eldarica:
+
+```
+$ ts-node run.ts aon-example contract.sol C 60 eld                                              
+### Running with solver eld
+### Entire output:
+{
+  errors: [
+    {
+      component: 'general',
+      errorCode: '6328',
+      formattedMessage: 'Warning: CHC: Assertion violation might happen here.\n' +
+        ' --> fileName:9:42:\n' +
+        '  |\n' +
+        '9 |   function is_not_solved() view public { assert(!f); }\n' +
+        '  |                                          ^^^^^^^^^^\n' +
+        '\n',
+      message: 'CHC: Assertion violation might happen here.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
+    }
+  ],
+  sources: { fileName: { id: 0 } }
+}
+### End output
+
+
+####### Final solving and time report:
+Solver eld did not solve in 62012.04051595926ms
+```
+
+Unfortunately in this case Eldarica was not able to solve the example.
+
+Note that in order to model-check the example with the docker scripts, the
+Solidity file needs to be copied inside the docker image.
 
 Changing the contract by substituting the function `pressF()` above with
+
 ```
-  function pressF() public { if (b) { e = true; } else { reset(); } }
+function pressF() public { if (b) { e = true; } else { reset(); } }
 ```
+
 results in the assertion becoming unreachable, which can again be shown
-with `SolCMC`.
+with SolCMC and z3/Spacer:
+
 ```
-$ ts-node run.ts ~/tmp/solc-example contract.sol C 60 z3 aon-example contract-safe.sol C 60 z3
-### Running with solver z3
+$ ./solc aon-example/contract_safe.sol --model-checker-engine chc --model-checker-timeout 20000 --model-checker-invariants contract
+Info: Contract invariant(s) for aon-example/contract_safe.sol:C:
+!f
+```
+
+Eldarica also finds the same inductive contract invariant for the safe case:
+
+```
+ts-node run.ts aon-example contract_safe.sol C 60 eld
+### Running with solver eld
 ### Entire output:
-{ errors: [], sources: { fileName: { id: 0 } } }
+{
+  errors: [
+    {
+      component: 'general',
+      errorCode: '1180',
+      formattedMessage: 'Info: Contract invariant(s) for fileName:C:\n!(f = true)\n\n\n',
+      message: 'Contract invariant(s) for fileName:C:\n!(f = true)\n',
+      severity: 'info',
+      type: 'Info'
+    }
+  ],
+  sources: { fileName: { id: 0 } }
+}
 ### End output
+##### Solver eld invariants:
+Info: Contract invariant(s) for fileName:C:
+!(f = true)
+
+
+
+##### End invariants
+
+
+####### Final solving and time report:
+Solver eld solved in 27746.58856499195ms
 ```
 
 # Relevant Source Code
@@ -529,4 +667,4 @@ and
 
 In particular, the syntactic elements of the Solidity language
 are encoded to CHCs using the overridden `visit` and `endVisit`
-functions (e.g. `visit(ContractDefinition const &)`)
+functions (e.g. `visit(ContractDefinition const &)`).
