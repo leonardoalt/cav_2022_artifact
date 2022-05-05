@@ -342,11 +342,70 @@ Table 5:
 $ ./solcmc_regression_merge
 ```
 
+Generated table:
+
+| Category            | Total | Eldarica | Spacer Quant |
+| ------------------- | ----- | -------- | ------------ |
+| abi                 | 28    | 28       | 6            |
+| array_members       | 73    | 73       | 73           |
+| blockchain_state    | 30    | 27       | 30           |
+| complex             | 5     | 5        | 5            |
+| control_flow        | 64    | 62       | 64           |
+| crypto              | 7     | 7        | 2            |
+| external_calls      | 47    | 44       | 40           |
+| file_level          | 19    | 19       | 18           |
+| functions           | 126   | 126      | 123          |
+| function_selector   | 6     | 6        | 6            |
+| inheritance         | 49    | 49       | 49           |
+| inline_assembly     | 11    | 11       | 11           |
+| invariants          | 7     | 6        | 5            |
+| loops               | 52    | 51       | 52           |
+| math                | 5     | 4        | 5            |
+| modifiers           | 28    | 28       | 28           |
+| natspec             | 8     | 8        | 8            |
+| operators           | 147   | 142      | 145          |
+| out_of_bounds       | 12    | 12       | 12           |
+| overflow            | 24    | 24       | 24           |
+| simple              | 2     | 2        | 2            |
+| special             | 41    | 38       | 41           |
+| try_catch           | 21    | 21       | 21           |
+| typecast            | 33    | 33       | 33           |
+| types               | 227   | 226      | 225          |
+| unchecked           | 11    | 11       | 11           |
+| userTypes           | 11    | 11       | 10           |
+| verification_target | 8     | 8        | 8            |
+
 ## Errata
 
-A few categories have wrong benchmarks
+The table above, obtained while re-running the experiments with this artifact,
+yields exactly the same numbers for most categories, but differs slightly from
+Table 5 in other categories.
+We believe that the differences do not change the conclusion of the experiment,
+since the main categories relevant to the conclusion, that is, `abi` and
+`crypto`, have the same results.
 
-TODO
+Below we clarify the differences:
+
+- `array_members`: z3/Spacer solves one more benchmark.
+- `external_calls`: Eldarica solves one less benchmark.
+- `invariants`: z3/Spacer solves two less benchmarks.
+- `loops`: we found out that one of the benchmarks in the paper's experiments
+  was actually a log file inside the directory and not a benchmark, therefore
+  the total number is 52 instead of 53. This means that Eldarica solves one
+  less benchmark this time.
+- `math`: the previous table missed 3 of the benchmarks that were present in
+  the previous results. The table above is up-to-date and has the correct
+  results for this category.
+- `operators`: the previous table missed 2 of the benchmarks that were present in
+  the previous results. The table above is up-to-date and has the correct
+  results for this category.
+- `special`: Eldarica solves two less benchmarks.
+- `types`: Eldarica solves 3 and z3/Spacer 6 more benchmarks.
+- `userTypes`: z3/Spacer solves 1 less benchmark.
+
+The different in solving may be due to different machines and loads.  The
+mistaken number of benchmarks in a few categories were our error when
+building/formatting the table.
 
 # Installation and Usage Outside the Docker Image
 
