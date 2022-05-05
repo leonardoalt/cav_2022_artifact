@@ -335,8 +335,11 @@ tie, both solvers are considered winners.
 
 ## Reproducing Table 5
 
-In order to reproduce Table 5 from the paper, the command above needs to be run
-for every subdirectory of `regression/`, which is done by the script below.
+In order to reproduce Table 5 from the paper, the command above needs to
+be run for every subdirectory of `regression/`.  For ease of use and
+better visualization we provide automation for running and processing
+the results.  The scripts require the `matplotlib` library, available
+through `pip install matplotlib`.
 
 ```
 $ ./docker_solcmc_regression_all
