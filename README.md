@@ -413,9 +413,10 @@ supported as the CHC engine in these binaries.
 
 If on Linux (no need on OSX), first install z3 and its dynamic library,
 available from [the z3 github repository](https://github.com/z3prover/z3) and
-most package managers.  The z3 version must be >=4.8.8 and <= 4.8.14, since SolcMC does not
-yet fully support z3 >=4.8.15, and z3's API <4.8.8 does not have a few features
-that SolCMC needs.
+most package managers.  The z3 version must be >=4.8.8 and <= 4.8.14, since
+z3's API <4.8.8 does not have a few features that SolCMC needs, and the latest
+`solc` release binary uses z3 4.8.14, the latest release when that `solc` was
+built.
 
 Get the Linux or OSX `solc` binary from the [official
 releases](https://github.com/ethereum/solidity/releases).
