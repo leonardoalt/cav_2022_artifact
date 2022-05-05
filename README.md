@@ -61,9 +61,10 @@ We have been conservative with the timeouts given below, as they are all
 multiplied by a factor of 2 compared to the quickest time they took on the
 reference machine described above.
 In the tests below, if we claim that a certain test should run successfully and
-you get a different output, please increase the timeout. We have noticed that
-especially on Mac OSX these tests take much longer than on the reference
-machine.
+you get a different output, please increase the timeout.
+
+We have noticed that on Mac OSX these tests take from 3x to 5x longer than on
+the reference machine.
 
 # Smoke Test
 
