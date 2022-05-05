@@ -328,8 +328,9 @@ through `pip install matplotlib`.
 $ ./docker_solcmc_regression_all
 ```
 
-The entire run should take less than 3 hours. After the run, there should be
-log file for each category in `./tests/regression/`, named `<category>.txt`.
+The entire run takes about 2h in the reference machine. After the run, there
+should be log file for each category in `./tests/regression/`, named
+`<category>.txt`.
 
 The last lines of each of the log files should show how many benchmarks there
 were, and on how many benchmarks each of the solver was considered a winner.
@@ -338,7 +339,7 @@ The script below merges all the results from the different categories into
 Table 5:
 
 ```
-$ ./docker_solcmc_regression_merge
+$ ./solcmc_regression_merge
 ```
 
 ## Errata
