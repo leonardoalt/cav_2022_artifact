@@ -388,7 +388,7 @@ $ npm install -g ts-node
 Fetch the `javascript` bindings for `solc`.
 
 ```
-$ git clone https://github.com/ethereum/solc-js.git
+$ git clone --branch cav_artifact https://github.com/ethereum/solc-js.git
 $ cd solc-js
 $ npm install
 ```
@@ -426,11 +426,15 @@ into `wasm` using a script provided with the source code
 (`./scripts/ci/bild_emscripten.sh`).
 
 ```
-$ git clone --recursive https://github.com/ethereum/solidity.git
+$ git clone --recursive --branch smt_eldarica_cex https://github.com/ethereum/solidity.git
 $ cd solidity
 $ docker image pull solbuildpackpusher/solidity-buildpack-deps:emscripten-9
 $ docker run -t --rm -v $(pwd):/root/project --workdir /root/project solbuildpackpusher/solidity-buildpack-deps:emscripten-9 /bin/sh ./scripts/ci/build_emscripten.sh
 ```
+
+You might have to update the script `./scripts/ci/build_emscripten.sh` to
+not require strict z3 version for the compilation to go through
+(`-DSTRICT_Z3_VERSION=OFF`).
 
 This produces the file `soljson.js` in the working directory.  Copy this
 file to where you have `solc-js` source code instead of copying the file
