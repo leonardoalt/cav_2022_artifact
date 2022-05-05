@@ -1,4 +1,4 @@
-[ [32m'/home/solc-js'[39m, [32m'verification_target'[39m, [32m'10'[39m ]
+[ '/home/solc-js', 'verification_target', '10' ]
 /home/solc-js/regression/verification_target
 ### Running /home/solc-js/regression/verification_target/constant_condition_1.sol ...
 ### ... with solver Eldarica Vanilla
@@ -6,38 +6,38 @@
 {
   errors: [
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3805'[39m,
-      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
-      severity: [32m'warning'[39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3805',
+      formattedMessage: 'Warning: This is a pre-release compiler version, please do not use it in production.\n' +
+        '\n',
+      message: 'This is a pre-release compiler version, please do not use it in production.',
+      severity: 'warning',
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'1878'[39m,
-      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '1878',
+      formattedMessage: 'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n' +
+        '--> test\n' +
+        '\n',
+      message: 'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3420'[39m,
-      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'Source file does not specify required compiler version!'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3420',
+      formattedMessage: 'Warning: Source file does not specify required compiler version!\n' +
+        '--> test\n' +
+        '\n',
+      message: 'Source file does not specify required compiler version!',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     }
   ],
-  sources: { test: { id: [33m0[39m } }
+  sources: { test: { id: 0 } }
 }
 ### End output
 ### ... with solver Spacer Quant
@@ -45,38 +45,38 @@
 {
   errors: [
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3805'[39m,
-      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
-      severity: [32m'warning'[39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3805',
+      formattedMessage: 'Warning: This is a pre-release compiler version, please do not use it in production.\n' +
+        '\n',
+      message: 'This is a pre-release compiler version, please do not use it in production.',
+      severity: 'warning',
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'1878'[39m,
-      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '1878',
+      formattedMessage: 'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n' +
+        '--> test\n' +
+        '\n',
+      message: 'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3420'[39m,
-      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'Source file does not specify required compiler version!'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3420',
+      formattedMessage: 'Warning: Source file does not specify required compiler version!\n' +
+        '--> test\n' +
+        '\n',
+      message: 'Source file does not specify required compiler version!',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     }
   ],
-  sources: { test: { id: [33m0[39m } }
+  sources: { test: { id: 0 } }
 }
 ### End output
 ### Running /home/solc-js/regression/verification_target/constant_condition_2.sol ...
@@ -85,38 +85,38 @@
 {
   errors: [
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3805'[39m,
-      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
-      severity: [32m'warning'[39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3805',
+      formattedMessage: 'Warning: This is a pre-release compiler version, please do not use it in production.\n' +
+        '\n',
+      message: 'This is a pre-release compiler version, please do not use it in production.',
+      severity: 'warning',
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'1878'[39m,
-      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '1878',
+      formattedMessage: 'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n' +
+        '--> test\n' +
+        '\n',
+      message: 'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3420'[39m,
-      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'Source file does not specify required compiler version!'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3420',
+      formattedMessage: 'Warning: Source file does not specify required compiler version!\n' +
+        '--> test\n' +
+        '\n',
+      message: 'Source file does not specify required compiler version!',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     }
   ],
-  sources: { test: { id: [33m0[39m } }
+  sources: { test: { id: 0 } }
 }
 ### End output
 ### ... with solver Spacer Quant
@@ -124,38 +124,38 @@
 {
   errors: [
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3805'[39m,
-      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
-      severity: [32m'warning'[39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3805',
+      formattedMessage: 'Warning: This is a pre-release compiler version, please do not use it in production.\n' +
+        '\n',
+      message: 'This is a pre-release compiler version, please do not use it in production.',
+      severity: 'warning',
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'1878'[39m,
-      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '1878',
+      formattedMessage: 'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n' +
+        '--> test\n' +
+        '\n',
+      message: 'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3420'[39m,
-      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'Source file does not specify required compiler version!'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3420',
+      formattedMessage: 'Warning: Source file does not specify required compiler version!\n' +
+        '--> test\n' +
+        '\n',
+      message: 'Source file does not specify required compiler version!',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     }
   ],
-  sources: { test: { id: [33m0[39m } }
+  sources: { test: { id: 0 } }
 }
 ### End output
 ### Running /home/solc-js/regression/verification_target/constant_condition_3.sol ...
@@ -164,38 +164,38 @@
 {
   errors: [
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3805'[39m,
-      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
-      severity: [32m'warning'[39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3805',
+      formattedMessage: 'Warning: This is a pre-release compiler version, please do not use it in production.\n' +
+        '\n',
+      message: 'This is a pre-release compiler version, please do not use it in production.',
+      severity: 'warning',
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'1878'[39m,
-      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '1878',
+      formattedMessage: 'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n' +
+        '--> test\n' +
+        '\n',
+      message: 'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3420'[39m,
-      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'Source file does not specify required compiler version!'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3420',
+      formattedMessage: 'Warning: Source file does not specify required compiler version!\n' +
+        '--> test\n' +
+        '\n',
+      message: 'Source file does not specify required compiler version!',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     }
   ],
-  sources: { test: { id: [33m0[39m } }
+  sources: { test: { id: 0 } }
 }
 ### End output
 ### ... with solver Spacer Quant
@@ -203,38 +203,38 @@
 {
   errors: [
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3805'[39m,
-      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
-      severity: [32m'warning'[39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3805',
+      formattedMessage: 'Warning: This is a pre-release compiler version, please do not use it in production.\n' +
+        '\n',
+      message: 'This is a pre-release compiler version, please do not use it in production.',
+      severity: 'warning',
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'1878'[39m,
-      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '1878',
+      formattedMessage: 'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n' +
+        '--> test\n' +
+        '\n',
+      message: 'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3420'[39m,
-      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'Source file does not specify required compiler version!'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3420',
+      formattedMessage: 'Warning: Source file does not specify required compiler version!\n' +
+        '--> test\n' +
+        '\n',
+      message: 'Source file does not specify required compiler version!',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     }
   ],
-  sources: { test: { id: [33m0[39m } }
+  sources: { test: { id: 0 } }
 }
 ### End output
 ### Running /home/solc-js/regression/verification_target/no_target_for_abstract_constract.sol ...
@@ -243,38 +243,38 @@
 {
   errors: [
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3805'[39m,
-      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
-      severity: [32m'warning'[39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3805',
+      formattedMessage: 'Warning: This is a pre-release compiler version, please do not use it in production.\n' +
+        '\n',
+      message: 'This is a pre-release compiler version, please do not use it in production.',
+      severity: 'warning',
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'1878'[39m,
-      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '1878',
+      formattedMessage: 'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n' +
+        '--> test\n' +
+        '\n',
+      message: 'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3420'[39m,
-      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'Source file does not specify required compiler version!'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3420',
+      formattedMessage: 'Warning: Source file does not specify required compiler version!\n' +
+        '--> test\n' +
+        '\n',
+      message: 'Source file does not specify required compiler version!',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     }
   ],
-  sources: { test: { id: [33m0[39m } }
+  sources: { test: { id: 0 } }
 }
 ### End output
 ### ... with solver Spacer Quant
@@ -282,38 +282,38 @@
 {
   errors: [
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3805'[39m,
-      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
-      severity: [32m'warning'[39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3805',
+      formattedMessage: 'Warning: This is a pre-release compiler version, please do not use it in production.\n' +
+        '\n',
+      message: 'This is a pre-release compiler version, please do not use it in production.',
+      severity: 'warning',
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'1878'[39m,
-      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '1878',
+      formattedMessage: 'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n' +
+        '--> test\n' +
+        '\n',
+      message: 'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3420'[39m,
-      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'Source file does not specify required compiler version!'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3420',
+      formattedMessage: 'Warning: Source file does not specify required compiler version!\n' +
+        '--> test\n' +
+        '\n',
+      message: 'Source file does not specify required compiler version!',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     }
   ],
-  sources: { test: { id: [33m0[39m } }
+  sources: { test: { id: 0 } }
 }
 ### End output
 ### Running /home/solc-js/regression/verification_target/no_target_for_constructor_of_abstract_constract.sol ...
@@ -322,38 +322,38 @@
 {
   errors: [
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3805'[39m,
-      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
-      severity: [32m'warning'[39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3805',
+      formattedMessage: 'Warning: This is a pre-release compiler version, please do not use it in production.\n' +
+        '\n',
+      message: 'This is a pre-release compiler version, please do not use it in production.',
+      severity: 'warning',
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'1878'[39m,
-      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '1878',
+      formattedMessage: 'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n' +
+        '--> test\n' +
+        '\n',
+      message: 'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3420'[39m,
-      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'Source file does not specify required compiler version!'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3420',
+      formattedMessage: 'Warning: Source file does not specify required compiler version!\n' +
+        '--> test\n' +
+        '\n',
+      message: 'Source file does not specify required compiler version!',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     }
   ],
-  sources: { test: { id: [33m0[39m } }
+  sources: { test: { id: 0 } }
 }
 ### End output
 ### ... with solver Spacer Quant
@@ -361,38 +361,38 @@
 {
   errors: [
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3805'[39m,
-      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
-      severity: [32m'warning'[39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3805',
+      formattedMessage: 'Warning: This is a pre-release compiler version, please do not use it in production.\n' +
+        '\n',
+      message: 'This is a pre-release compiler version, please do not use it in production.',
+      severity: 'warning',
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'1878'[39m,
-      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '1878',
+      formattedMessage: 'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n' +
+        '--> test\n' +
+        '\n',
+      message: 'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3420'[39m,
-      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'Source file does not specify required compiler version!'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3420',
+      formattedMessage: 'Warning: Source file does not specify required compiler version!\n' +
+        '--> test\n' +
+        '\n',
+      message: 'Source file does not specify required compiler version!',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     }
   ],
-  sources: { test: { id: [33m0[39m } }
+  sources: { test: { id: 0 } }
 }
 ### End output
 ### Running /home/solc-js/regression/verification_target/simple_assert.sol ...
@@ -401,52 +401,52 @@
 {
   errors: [
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3805'[39m,
-      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
-      severity: [32m'warning'[39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3805',
+      formattedMessage: 'Warning: This is a pre-release compiler version, please do not use it in production.\n' +
+        '\n',
+      message: 'This is a pre-release compiler version, please do not use it in production.',
+      severity: 'warning',
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'1878'[39m,
-      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '1878',
+      formattedMessage: 'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n' +
+        '--> test\n' +
+        '\n',
+      message: 'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3420'[39m,
-      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'Source file does not specify required compiler version!'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3420',
+      formattedMessage: 'Warning: Source file does not specify required compiler version!\n' +
+        '--> test\n' +
+        '\n',
+      message: 'Source file does not specify required compiler version!',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'6328'[39m,
-      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
-        [32m' --> test:2:38:\n'[39m +
-        [32m'  |\n'[39m +
-        [32m'2 |     function f(uint a) public pure { assert(a == 2); }\n'[39m +
-        [32m'  |                                      ^^^^^^^^^^^^^^\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'CHC: Assertion violation happens here.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '6328',
+      formattedMessage: 'Warning: CHC: Assertion violation happens here.\n' +
+        ' --> test:2:38:\n' +
+        '  |\n' +
+        '2 |     function f(uint a) public pure { assert(a == 2); }\n' +
+        '  |                                      ^^^^^^^^^^^^^^\n' +
+        '\n',
+      message: 'CHC: Assertion violation happens here.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     }
   ],
-  sources: { test: { id: [33m0[39m } }
+  sources: { test: { id: 0 } }
 }
 ### End output
 ### ... with solver Spacer Quant
@@ -454,52 +454,52 @@
 {
   errors: [
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3805'[39m,
-      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
-      severity: [32m'warning'[39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3805',
+      formattedMessage: 'Warning: This is a pre-release compiler version, please do not use it in production.\n' +
+        '\n',
+      message: 'This is a pre-release compiler version, please do not use it in production.',
+      severity: 'warning',
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'1878'[39m,
-      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '1878',
+      formattedMessage: 'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n' +
+        '--> test\n' +
+        '\n',
+      message: 'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3420'[39m,
-      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'Source file does not specify required compiler version!'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3420',
+      formattedMessage: 'Warning: Source file does not specify required compiler version!\n' +
+        '--> test\n' +
+        '\n',
+      message: 'Source file does not specify required compiler version!',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'6328'[39m,
-      formattedMessage: [32m'Warning: CHC: Assertion violation happens here.\n'[39m +
-        [32m' --> test:2:38:\n'[39m +
-        [32m'  |\n'[39m +
-        [32m'2 |     function f(uint a) public pure { assert(a == 2); }\n'[39m +
-        [32m'  |                                      ^^^^^^^^^^^^^^\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'CHC: Assertion violation happens here.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '6328',
+      formattedMessage: 'Warning: CHC: Assertion violation happens here.\n' +
+        ' --> test:2:38:\n' +
+        '  |\n' +
+        '2 |     function f(uint a) public pure { assert(a == 2); }\n' +
+        '  |                                      ^^^^^^^^^^^^^^\n' +
+        '\n',
+      message: 'CHC: Assertion violation happens here.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     }
   ],
-  sources: { test: { id: [33m0[39m } }
+  sources: { test: { id: 0 } }
 }
 ### End output
 ### Running /home/solc-js/regression/verification_target/simple_assert_with_require.sol ...
@@ -508,38 +508,38 @@
 {
   errors: [
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3805'[39m,
-      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
-      severity: [32m'warning'[39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3805',
+      formattedMessage: 'Warning: This is a pre-release compiler version, please do not use it in production.\n' +
+        '\n',
+      message: 'This is a pre-release compiler version, please do not use it in production.',
+      severity: 'warning',
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'1878'[39m,
-      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '1878',
+      formattedMessage: 'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n' +
+        '--> test\n' +
+        '\n',
+      message: 'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3420'[39m,
-      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'Source file does not specify required compiler version!'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3420',
+      formattedMessage: 'Warning: Source file does not specify required compiler version!\n' +
+        '--> test\n' +
+        '\n',
+      message: 'Source file does not specify required compiler version!',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     }
   ],
-  sources: { test: { id: [33m0[39m } }
+  sources: { test: { id: 0 } }
 }
 ### End output
 ### ... with solver Spacer Quant
@@ -547,38 +547,38 @@
 {
   errors: [
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3805'[39m,
-      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
-      severity: [32m'warning'[39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3805',
+      formattedMessage: 'Warning: This is a pre-release compiler version, please do not use it in production.\n' +
+        '\n',
+      message: 'This is a pre-release compiler version, please do not use it in production.',
+      severity: 'warning',
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'1878'[39m,
-      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '1878',
+      formattedMessage: 'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n' +
+        '--> test\n' +
+        '\n',
+      message: 'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3420'[39m,
-      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'Source file does not specify required compiler version!'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3420',
+      formattedMessage: 'Warning: Source file does not specify required compiler version!\n' +
+        '--> test\n' +
+        '\n',
+      message: 'Source file does not specify required compiler version!',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     }
   ],
-  sources: { test: { id: [33m0[39m } }
+  sources: { test: { id: 0 } }
 }
 ### End output
 ### Running /home/solc-js/regression/verification_target/simple_assert_with_require_message.sol ...
@@ -587,38 +587,38 @@
 {
   errors: [
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3805'[39m,
-      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
-      severity: [32m'warning'[39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3805',
+      formattedMessage: 'Warning: This is a pre-release compiler version, please do not use it in production.\n' +
+        '\n',
+      message: 'This is a pre-release compiler version, please do not use it in production.',
+      severity: 'warning',
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'1878'[39m,
-      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '1878',
+      formattedMessage: 'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n' +
+        '--> test\n' +
+        '\n',
+      message: 'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3420'[39m,
-      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'Source file does not specify required compiler version!'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3420',
+      formattedMessage: 'Warning: Source file does not specify required compiler version!\n' +
+        '--> test\n' +
+        '\n',
+      message: 'Source file does not specify required compiler version!',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     }
   ],
-  sources: { test: { id: [33m0[39m } }
+  sources: { test: { id: 0 } }
 }
 ### End output
 ### ... with solver Spacer Quant
@@ -626,38 +626,38 @@
 {
   errors: [
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3805'[39m,
-      formattedMessage: [32m'Warning: This is a pre-release compiler version, please do not use it in production.\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'This is a pre-release compiler version, please do not use it in production.'[39m,
-      severity: [32m'warning'[39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3805',
+      formattedMessage: 'Warning: This is a pre-release compiler version, please do not use it in production.\n' +
+        '\n',
+      message: 'This is a pre-release compiler version, please do not use it in production.',
+      severity: 'warning',
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'1878'[39m,
-      formattedMessage: [32m'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '1878',
+      formattedMessage: 'Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.\n' +
+        '--> test\n' +
+        '\n',
+      message: 'SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     },
     {
-      component: [32m'general'[39m,
-      errorCode: [32m'3420'[39m,
-      formattedMessage: [32m'Warning: Source file does not specify required compiler version!\n'[39m +
-        [32m'--> test\n'[39m +
-        [32m'\n'[39m,
-      message: [32m'Source file does not specify required compiler version!'[39m,
-      severity: [32m'warning'[39m,
-      sourceLocation: [36m[Object][39m,
-      type: [32m'Warning'[39m
+      component: 'general',
+      errorCode: '3420',
+      formattedMessage: 'Warning: Source file does not specify required compiler version!\n' +
+        '--> test\n' +
+        '\n',
+      message: 'Source file does not specify required compiler version!',
+      severity: 'warning',
+      sourceLocation: [Object],
+      type: 'Warning'
     }
   ],
-  sources: { test: { id: [33m0[39m } }
+  sources: { test: { id: 0 } }
 }
 ### End output
 {"/home/solc-js/regression/verification_target/constant_condition_1.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/verification_target/constant_condition_2.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/verification_target/constant_condition_3.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/verification_target/no_target_for_abstract_constract.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/verification_target/no_target_for_constructor_of_abstract_constract.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/verification_target/simple_assert.sol":[{"notProved":0,"unsafe":1,"safe":0,"winner":true},{"notProved":0,"unsafe":1,"safe":0,"winner":true}],"/home/solc-js/regression/verification_target/simple_assert_with_require.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}],"/home/solc-js/regression/verification_target/simple_assert_with_require_message.sol":[{"notProved":0,"unsafe":0,"safe":0,"winner":true},{"notProved":0,"unsafe":0,"safe":0,"winner":true}]}
