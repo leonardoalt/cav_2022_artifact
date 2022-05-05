@@ -10,4 +10,4 @@ tmpjson="$tmpfile.json"
 
 tail -1 "$tmpfile" > "$tmpjson"
 
-python ./regression_format.py "$tmpjson" $1
+python3 ./regression_format.py "$tmpjson" $1
