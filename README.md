@@ -418,7 +418,7 @@ Install ts-node:
 $ npm install -g ts-node
 ```
 
-Fetch the `JavasSript` bindings for `solc`.
+Fetch the JavaScript bindings for `solc`.
 
 ```
 $ git clone https://github.com/ethereum/solc-js.git
