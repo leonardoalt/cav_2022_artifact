@@ -302,7 +302,7 @@ One category can be tested, for example, via the command below, where `simple` i
 a subdirectory inside `regression/`.
 
 ```
-$ /docker_solcmc_regression simple 10
+$ ./docker_solcmc_regression simple 10
 ```
 
 Running the command above should take about 10s, and its expected output can be
