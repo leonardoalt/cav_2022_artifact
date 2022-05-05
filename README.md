@@ -20,10 +20,10 @@ The structure of this `README` is as follows.
    whether the artifact works
 5. Reproducing the Experiments of the Paper gives the required details
    for reproduction.
-6. Usage Beyond the Paper explains how the artifact can be modified for
-   other model checking tasks
-7. Installation Outside the Docker Image describes alternate
+6. Installation Outside the Docker Image describes alternate
    ways of installation.
+7. Usage Beyond the Paper explains how the artifact can be modified for
+   other model checking tasks
 8. Relevant Source Code gives pointers to the implementation of the
    techniques.
 
@@ -364,21 +364,20 @@ A few categories have wrong benchmarks
 
 TODO
 
-# Usage Beyond the Paper
-
-TODO
-
 # Installation Outside the Docker Image
 
-This quick installation guide should work for any unix machine.  It has
-been tested in arch linux, ubuntu and OS X.
+We detail two ways of installing SolCMC: one using pre-built binary,
+and the other compiling the system from locally fetched sources.
 
-Install first `z3` or `eldarica` in order to have a CHC engine.  In
-order to use `eldarica`, make sure that the directory containing
-`eldarica` is in the search path.  `z3` is available from
-[the z3 github repository](https://github.com/z3prover/z3) and
-`Eldarica` respectively from [the Eldarica github
-repository](https://github.com/uuverifiers/eldarica.git).
+## Quick installation using pre-built binary
+
+This quick installation guide should work for any unix machine.  It has
+been tested in arch linux, ubuntu and OS X. Currently only z3/spacer is
+supported as the CHC engine.
+
+First install `z3`, available from
+[the z3 github repository](https://github.com/z3prover/z3) and many
+package managers.
 
 Install ts-node:
 ```
@@ -388,16 +387,15 @@ $ npm install -g ts-node
 Fetch the `javascript` bindings for `solc`.
 
 ```
-$ git clone --branch cav_artifact https://github.com/ethereum/solc-js.git
+$ git clone https://github.com/ethereum/solc-js.git
 $ cd solc-js
 $ npm install
 ```
 
-Copy the `solc` compiler (compiled into `Wasm`) from this artifact to the
-top level of `solc-js`:
+Get the most recent release of the `solc` compiler (compiled into `Wasm`):
 
 ```
-$ cp <path-to-artifact>/soljson.js ./soljson.js
+$ wget -O soljson.js https://github.com/ethereum/solc-bin/raw/gh-pages/bin/soljson-latest.js
 ```
 
 The solidity compiler, being highly configurable and backwards
@@ -416,14 +414,25 @@ outside Docker.  For example:
 $ ts-node run.ts <path-to-artifact>/examples smoke_unsafe.sol Smoke 60 z3
 ```
 
-## Compiling `solc`
+## Installing by compiling `solc`
 
-To use `solc` with the javascript configuration (`run.ts` above), one
-needs to compile `solc` into `Wasm`.  The compilation of `solc` into
-`Wasm` is done in a docker image designed for this.  The below example
-first fetches `solc` source code from github, and then compiles `solc`
-into `wasm` using a script provided with the source code
-(`./scripts/ci/bild_emscripten.sh`).
+This installation method is required if the use wants to change the
+solidity source code.  It also allows running eldarica, currently
+unsupported in the releases of solc and solc-js.
+
+First install `z3` and `eldarica` in order to have a CHC engine.  In
+order to use `eldarica`, make sure that the directory containing
+`eldarica` is in the search path.  `z3` is available from
+[the z3 github repository](https://github.com/z3prover/z3) and
+`Eldarica` respectively from [the Eldarica github
+repository](https://github.com/uuverifiers/eldarica.git).
+
+### Compiling `solc` into `Wasm`
+
+The compilation of `solc` into `Wasm` is done in a docker image designed
+for this.  Below we first fetch `solc` source code from github, and then
+compile `solc` into `wasm` using a script provided in the continuous
+integration of `solc` (`./scripts/ci/bild_emscripten.sh`).
 
 ```
 $ git clone --recursive --branch smt_eldarica_cex https://github.com/ethereum/solidity.git
@@ -432,14 +441,25 @@ $ docker image pull solbuildpackpusher/solidity-buildpack-deps:emscripten-9
 $ docker run -t --rm -v $(pwd):/root/project --workdir /root/project solbuildpackpusher/solidity-buildpack-deps:emscripten-9 /bin/sh ./scripts/ci/build_emscripten.sh
 ```
 
-You might have to update the script `./scripts/ci/build_emscripten.sh` to
-not require strict z3 version for the compilation to go through
-(`-DSTRICT_Z3_VERSION=OFF`).
+The end product is the file `soljson.js`, the `Wasm` compilation of
+`solc`.
 
-This produces the file `soljson.js` in the working directory.  Copy this
-file to where you have `solc-js` source code instead of copying the file
-`soljson.js` from this artifact to `solc-js` (see the previous section).
-It is now possible to SolCMC with the locally compiled `Wasm` `solc`.
+Note: You might have to update the script `./scripts/ci/build_emscripten.sh`
+to not require strict z3 version for the compilation to go through
+(`-DSTRICT_Z3_VERSION=OFF`), since the docker image for emscripten might
+not be synchronized with the branch `smt_eldarica_cex`.
+
+Fetch the `javascript` bindings for `solc`.
+
+```
+$ git clone --branch cav_artifact https://github.com/ethereum/solc-js.git
+$ cd solc-js
+$ npm install
+```
+
+Copy the file `soljson.js` to root of `solc-js` source code.  It is now
+possible to SolCMC with the locally compiled `Wasm` `solc` (see the
+previous section).
 
 # Usage Beyond the Paper
 
@@ -466,9 +486,9 @@ contract C {
 }
 ```
 
-The above assertion is reachable throug "pressing the buttons" D, E, A,
-C, B, F.  This reachability is quickly verified by solcmc, e.g., by
-running the local installation set up in the previous section:
+The assertion in the code is reachable throug "pressing the buttons" D,
+E, A, C, B, F.  This reachability is quickly verified by solcmc, e.g.,
+by running the local installation set up in the previous section:
 
 ```
 $ ts-node run.ts ~/tmp/solc-example contract.sol C 60 z3 aon-example contract.sol C 60 z3
@@ -483,8 +503,8 @@ Warning: CHC: Assertion violation happens here.
 ##### End counterexample
 ```
 
-(Note that in order to model-check the example with the docker scripts, the file
-needs to be copied inside the docker image)
+Note that in order to model-check the example with the docker scripts,
+the file needs to be copied inside the docker image.
 
 Changing the contract by substituting the function `pressF()` above with
 ```
@@ -493,7 +513,7 @@ Changing the contract by substituting the function `pressF()` above with
 results in the assertion becoming unreachable, which can again be shown
 with `SolCMC`.
 ```
-$ ts-node run.ts ~/tmp/solc-example contract.sol C 60 z3 aon-example contract-mod.sol C 60 z3
+$ ts-node run.ts ~/tmp/solc-example contract.sol C 60 z3 aon-example contract-safe.sol C 60 z3
 ### Running with solver z3
 ### Entire output:
 { errors: [], sources: { fileName: { id: 0 } } }
