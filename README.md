@@ -1,6 +1,6 @@
 # Structure and Content
 
-This README and the related artifact is designed for allowing
+This README and the related artifact are designed for allowing
 independent reproduction of the results in the paper `SolCMC: Solidity
 Compiler's model checker`.  In addition it describes how the tool
 SolCMC can be used in other contexts.  A more thorough documentation on
@@ -11,20 +11,17 @@ explains also the BMC engine that is out of the scope of this artifact.
 
 The structure of this `README` is as follows.
 
-1. Set Up explains how to set up the environment using Docker.
-2. Available Commands describes the two shell scripts needed for reproducing
-   the experiments inside the docker image.
-3. Machine Specification describes the hardware and OS that were used for
-   producing the results in this artifact
-4. Smoke Test and Bigger Smoke Test describes how to test quickly
-   whether the artifact works
-5. Reproducing the Experiments of the Paper gives the required details
+1. `Set Up` explains how to set up the environment using Docker.
+3. `Machine Specification` describes the hardware and OS that were used for
+   producing the results in this artifact.
+4. `Smoke Test` and `Bigger Smoke Test` describe how to test quickly
+   whether the artifact works.
+5. `Reproducing the Experiments of the Paper` gives the required details
    for reproduction.
-6. Installation Outside the Docker Image describes alternate
-   ways of installation.
-7. Usage Beyond the Paper explains how the artifact can be modified for
-   other model checking tasks
-8. Relevant Source Code gives pointers to the implementation of the
+6. `Installation and Usage Outside the Docker Image` describes alternate
+   ways of installation and running SolCMC.
+7. `Usage Beyond the Paper` shows examples of SolCMC being applied in the wild.
+8. `Relevant Source Code` gives pointers to the implementation of the
    techniques.
 
 # Set Up
@@ -50,21 +47,6 @@ $ docker build -f Dockerfile-solcmc . --rm -t leoalt/cav
 ```
 
 When run for the first time, this takes approximately a minute.
-
-# Available Commands
-
-There are two available scripts to run the smart contract analysis with different
-solvers:
-
-- `./docker_solcmc <contract_dir> <contract_file.sol> <ContractName> <timeout
-  in seconds> <solver command> <solver arguments>` can be used to run one
-  solver on one benchmark, and is the easiest way to test the tool against any
-  smart contract. Please see section Smoke Test below for an example.
-- `./docker_solcmc_all_solvers <contract_dir> <contract_file.sol>
-  <ContractName> <timeout in seconds>` runs every solver and different
-  configuration on the selected benchmark. Please see section `Bigger Smoke
-  Test` below for an example. This script is also used on the experiments from
-  the paper.
 
 # Machine Specification
 
