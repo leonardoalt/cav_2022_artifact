@@ -489,7 +489,7 @@ $ npm install
 ```
 
 Copy the file `soljson.js` to the root directory of `solc-js`.  It is now
-possible to SolCMC with the locally compiled WebAssembly binary of `solc` (see
+possible to run SolCMC with the locally compiled WebAssembly binary of `solc` (see
 the previous section).
 
 To use the newly generated binary in this artifact's experiments, simply copy
