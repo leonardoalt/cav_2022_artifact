@@ -380,32 +380,16 @@ Generated table:
 The table above, obtained while re-running the experiments with this artifact,
 yields exactly the same numbers for most categories, but differs slightly from
 Table 5 in other categories.
+
 We believe that the differences do not change the conclusion of the experiment,
 since the main categories relevant to the conclusion, that is, `abi` and
 `crypto`, have the same results.
 
-Below we clarify the differences:
-
-- `array_members`: z3/Spacer solves one more benchmark.
-- `external_calls`: Eldarica solves one less benchmark.
-- `invariants`: z3/Spacer solves two less benchmarks.
-- `loops`: we found out that one of the benchmarks in the paper's experiments
-  was actually a log file inside the directory and not a benchmark, therefore
-  the total number is 52 instead of 53. This means that Eldarica solves one
-  less benchmark this time.
-- `math`: the previous table missed 3 of the benchmarks that were present in
-  the previous results. The table above is up-to-date and has the correct
-  results for this category.
-- `operators`: the previous table missed 2 of the benchmarks that were present in
-  the previous results. The table above is up-to-date and has the correct
-  results for this category.
-- `special`: Eldarica solves two less benchmarks.
-- `types`: Eldarica solves 3 and z3/Spacer 6 more benchmarks.
-- `userTypes`: z3/Spacer solves 1 less benchmark.
-
-The different in solving may be due to different machines and loads.  The
+The difference in solving may be due to different machines and loads.  The
 mistaken number of benchmarks in a few categories were our error when
-building/formatting the table.
+building/formatting the table for the paper. It changes the total number of
+benchmarks from 1098 to 1102. The version presented here is the correct one,
+which we will update in the final version of the paper.
 
 # Installation and Usage Outside the Docker Image
 
