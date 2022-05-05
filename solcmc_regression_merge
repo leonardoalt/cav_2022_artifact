@@ -1,11 +1,8 @@
 #!/usr/bin/env bash
 
-table="Category\t\tTotal\t\tEldarica\t\tSpacer Quant"
+echo "Category Total Eldarica SpacerQuant"
 for dir in ./regression/*
 do
 	cat=$(basename $dir)
-	res=$(tail -1 "tests/regression/$cat.txt")
-	table="$table\n$res"
+	echo $(tail -1 "tests/regression/$cat.txt")
 done
-
-printf "$table"
