@@ -15,15 +15,14 @@ Special requirements: none
 
 Justification for reuseability:
 
-The artifact and the software relevant to the contributions of the
-manuscript are released under the MIT license which allows their reuse
-and repurposing.  As is typical for SMT-based technology, exact
-reproducibility of results often requires the use of a specific version
-of a tool.  Therefore we ship some libraries (in particular Eldarica) in
-a version which was used during the experiment reported in the CAV
-paper.
+The artifact and the software relevant to the contributions of the manuscript
+are released under the MIT and GPL licenses which allow their reuse and
+repurposing (to a certain extent).  As is typical for SMT-based technology,
+exact reproducibility of results often requires the use of a specific version
+of a tool.  Therefore we ship some libraries (in particular Eldarica) in a
+version which was used during the experiment reported in the CAV paper.
 
 Since the model checker is shipped as part of production software, the
 system contained in the artifact can be easily applied to problems
 beyond those studied in the paper.  The system is also available through
-the official solidity releases.
+the official Solidity releases.

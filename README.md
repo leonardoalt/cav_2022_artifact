@@ -15,14 +15,16 @@ The structure of this `README` is as follows.
 2. `Machine Specification` describes the hardware and OS that were used for
    producing the results in this artifact.
 3. `Horn Solvers` briefly introduces the Horn solvers used by our experiments.
-4. `Smoke Test` and `Bigger Smoke Test` describe how to test quickly
+4. `Available Commands` describes the shell scripts needed for reproducing the
+   experiments inside the docker image.
+5. `Smoke Test` and `Bigger Smoke Test` describe how to test quickly
    whether the artifact works.
-5. `Reproducing the Experiments of the Paper` gives the required details
+6. `Reproducing the Experiments of the Paper` gives the required details
    for reproduction.
-6. `Installation and Usage Outside the Docker Image` describes alternate
+7. `Installation and Usage Outside the Docker Image` describes alternate
    ways of installation and running SolCMC.
-7. `Usage Beyond the Paper` shows examples of SolCMC being applied in the wild.
-8. `Relevant Source Code` gives pointers to the implementation of the
+8. `Usage Beyond the Paper` shows examples of SolCMC being applied in the wild.
+9. `Relevant Source Code` gives pointers to the implementation of the
    techniques.
 
 # Set Up
@@ -76,6 +78,28 @@ Eldarica outputs.  The features are provided when using z3/Spacer as well, but
 only with the C++ library, as presented in `Installation and Usage Outside the
 Docker Image`. That section shows counterexamples and invariants also from
 z3/Spacer.
+
+# Available Commands
+
+There are three available scripts to run the smart contract analysis with different
+solvers:
+
+- `./docker_solcmc <contract_dir> <contract_file.sol> <ContractName> <timeout
+  in seconds> <solver command> <solver arguments>` can be used to run one
+  solver on one benchmark, and is the easiest way to test the tool against any
+  smart contract. Please see section `Smoke Test` below for an example.
+- `./docker_solcmc_all_solvers <contract_dir> <contract_file.sol>
+  <ContractName> <timeout in seconds>` runs every solver and different
+  configuration on the selected benchmark. Please see section `Bigger Smoke
+  Test` below for an example.
+- `./docker_solcmc_regression <regression_dir> <timeout>` runs all regression
+  tests from a certain directory with all solvers and their configurations with
+  the given timeout.
+- `./docker_solcmc_regression_all` uses the script above to run all regression
+  tests from all categories.
+
+All scripts above are used while reproducing the experiments from the paper, as
+shown in the following sections.
 
 # Smoke Test
 
