@@ -584,7 +584,7 @@ file.
 
 SolCMC is being increasingly used in the field. Auditors, security experts, and
 advanced users often make use of the tool to prove invariants and find
-counterexamples. One example is the use of the tool to [prove correcntess of a
+counterexamples. One example is the use of the tool to [prove correctness of a
 Solidity library](https://github.com/Zellic/publications/tree/master/BokkyPooBahsDateTimeLibrary).
 As another example, the cyber security company [AON](https://www.aon.com/)
 recently published a [blog
