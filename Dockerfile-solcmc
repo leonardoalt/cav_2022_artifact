@@ -1,23 +1,20 @@
 FROM archlinux:latest
 
-ARG ELDARICA_VERSION
-
 ENV TZ=America/Chicago
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-RUN pacman --noconfirm -Syu --noprogressbar --needed z3 git jre-openjdk-headless curl
-
-# Download nodejs and npm
-
 RUN touch ~/.bashrc
-RUN pacman --noconfirm -S --noprogressbar nodejs npm
+
+RUN pacman --noconfirm -Syu --noprogressbar --needed z3 git jre-openjdk-headless curl nodejs npm python-matplotlib
 
 RUN source ~/.bashrc
+
+RUN mkdir -p /home/matplotlib && chmod 777 /home/matplotlib
+ENV MPLCONFIGDIR="/home/matplotlib"
 
 # Set up Eldarica
 
 COPY eldarica /home/eldarica
-
 ENV PATH="/home/eldarica:$PATH"
 
 # Download solcjs and ts-node
@@ -30,11 +27,6 @@ RUN cd /home/                                                            \
     && npm install
 
 COPY soljson.js /home/solc-js/soljson.js
-
-RUN pacman --noconfirm -Sy --noprogressbar python-matplotlib
-
-RUN mkdir -p /home/matplotlib && chmod 777 /home/matplotlib
-ENV MPLCONFIGDIR="/home/matplotlib"
 
 COPY regression /home/solc-js/regression
 

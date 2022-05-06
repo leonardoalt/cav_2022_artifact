@@ -12,3 +12,5 @@ tmpjson="$tmpfile.json"
 tail -1 "$tmpfile" > "$tmpjson"
 
 python ./regression_format.py "$tmpjson" $1
+
+rm "$tmpfile" "$tmpjson"
