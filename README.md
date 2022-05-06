@@ -505,7 +505,9 @@ To compile `solc` from its sources instead of using the Linux/OSX pre-built
 binaries, please follow the [official
 guideline](https://docs.soliditylang.org/en/v0.8.13/installing-solidity.html#building-from-source).
 
-To compile `solc` from sources into WebAssembly, install `docker` and run
+To compile `solc` from sources into WebAssembly, install `docker` and run the
+command below. Note that this build process downloads a docker image which may
+take some time.
 
 ```
 $ ./<solidity_root>/scripts/build_emscripten.sh
@@ -533,7 +535,7 @@ $ cd solidity
 $ ./scripts/build_emscripten.sh
 ```
 
-The end product is the file `soljson.js`, the `Wasm` compilation of `solc`.
+The end product is the file `soljson.js`, the WebAssembly compilation of `solc`.
 
 Install `ts-node` and fetch the `JavaScript` bindings for `solc`:
 
