@@ -514,7 +514,7 @@ In fact, any Horn solver's command line binary can be used in the call above
 instead of Eldarica. At the moment this is the only way to run Horn solvers
 besides z3/Spacer.
 
-## Compiling `solc` from Sources
+## Compiling `solc` from sources
 
 This is the case if someone wishes to compile `solc` by themselves, or change
 the source code.
@@ -534,7 +534,8 @@ command below. Note that this build process downloads a docker image which may
 take some time.
 
 ```
-$ ./<solidity_root>/scripts/build_emscripten.sh
+$ cd solidity
+$ ./scripts/build_emscripten.sh
 ```
 
 This will create the binary `soljson.js`, which can be used to run SolCMC with
