@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-echo "Category Total Eldarica SpacerQuant"
-for dir in ./regression/*
-do
-	cat=$(basename $dir)
-	echo $(tail -1 "tests/regression/$cat.txt")
-done

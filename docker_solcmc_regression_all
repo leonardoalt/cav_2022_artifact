@@ -1,10 +1,22 @@
 #!/usr/bin/env bash
 
-echo "Running all regression tests.  This will take some time."
+echo "[START] Running all regression tests. This will take some time.\n"
 for dir in ./regression/*
 do
 	cat=$(basename $dir)
-        echo "Checking regressions in $cat"
+	echo "[RUN] Checking regressions in $cat"
 	./docker_solcmc_regression "$cat" 10 > "tests/regression/$cat.txt"
 done
-echo "Finished running all regression tests."
+
+echo "[END] Finished running all regression tests."
+
+echo ""
+echo "Final results:"
+echo ""
+
+echo "Category Total Eldarica SpacerQuant"
+for dir in ./regression/*
+do
+	cat=$(basename $dir)
+	echo $(tail -1 "tests/regression/$cat.txt")
+done

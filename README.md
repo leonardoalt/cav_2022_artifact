@@ -334,13 +334,6 @@ should be log file for each category in `./tests/regression/`, named
 The last lines of each of the log files should show how many benchmarks there
 were, and on how many benchmarks each of the solver was considered a winner.
 
-The script below merges all the results from the different categories into
-Table 5:
-
-```
-$ ./solcmc_regression_merge
-```
-
 Generated table:
 
 | Category            | Total | Eldarica | Spacer Quant |
