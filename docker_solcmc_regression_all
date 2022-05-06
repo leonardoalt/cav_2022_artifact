@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
+echo "Running all regression tests.  This will take some time."
 for dir in ./regression/*
 do
 	cat=$(basename $dir)
+        echo "Checking regressions in $cat"
 	./docker_solcmc_regression "$cat" 10 > "tests/regression/$cat.txt"
 done
+echo "Finished running all regression tests."
