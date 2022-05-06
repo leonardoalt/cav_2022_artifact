@@ -413,6 +413,12 @@ built.
 Get the Linux or OSX `solc` binary from the [official
 releases](https://github.com/ethereum/solidity/releases).
 
+You may have to add execution permission to the downloaded binary:
+
+```
+$ chmod +x ./solc
+```
+
 Now SolCMC can be run on the examples provided in this artifact outside Docker,
 directly through the downloaded binary.  For example:
 
@@ -459,7 +465,10 @@ top level of `solc-js`:
 $ cp <path-to-artifact>/run.ts .
 ```
 
-Similarly to the previous section, we can run SolCMC outside Docker, but with
+Make sure `eld` from Eldarica (or the executable from the Horn solver you wish
+to run) is in `$PATH`.
+
+Similarly to the previous section, we can run SolCMC outside Docker, now with
 Eldarica:
 
 ```
