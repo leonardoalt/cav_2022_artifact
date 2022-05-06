@@ -7,13 +7,6 @@ manuscript and is designed to allow the precise reproduction of the
 results.  For the artifact, the software is distributed as a Docker
 image.
 
-DOI: 10.5281/zenodo.6525594
-URL: https://doi.org/10.5281/zenodo.6525594
-SHA256 of the zip file from Zenodo: 6a07971abe746490d2f5678c3283c44b65b5b1d6a32cc192339b403c815eed05
-
-Direct link to zip file on GitHub: https://github.com/leonardoalt/cav_2022_artifact/releases/download/v1.0.0-solcmc/cav_2022_solcmc.zip
-SHA256 of the zip file from GitHub: e20dec3a53d462c33ecff5f8b4896c834773d829cc5d830a510c9002a3323072
-
 Special requirements: none
 
 Justification for reuseability:
