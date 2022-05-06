@@ -405,18 +405,19 @@ Generated table:
 ## Errata
 
 The table above, obtained while re-running the experiments with this artifact,
-yields exactly the same numbers for most categories, but differs slightly from
-Table 5 in other categories.
+yields exactly the same numbers for most categories as in Table 5, but
+there are a few differences.
 
-We believe that the differences do not change the conclusion of the experiment,
-since the main categories relevant to the conclusion, that is, `abi` and
-`crypto`, have the same results.
+Most importantly, we believe that the differences do not change the
+conclusion of the experiment, since the main categories relevant to the
+conclusion, that is, `abi` and `crypto`, have the same results.
+The difference in most cases is due to different machines and loads.
 
-The difference in solving may be due to different machines and loads.  The
-mistaken number of benchmarks in a few categories were our error when
-building/formatting the table for the paper. It changes the total number of
-benchmarks from 1098 to 1102. The version presented here is the correct one,
-which we will update in the final version of the paper.
+However, we noticed differences also in number of benchmarks in a few
+categories.  This is due to a technical error when building/formatting
+the table for the paper.  The total number of benchmarks should have
+been 1102 instead of 1098. The version presented here is the correct
+one, and we will update the final version of the paper accordingly.
 
 # Installation and Usage Outside the Docker Image
 
