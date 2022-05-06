@@ -12,8 +12,9 @@ explains also the BMC engine that is out of the scope of this artifact.
 The structure of this `README` is as follows.
 
 1. `Set Up` explains how to set up the environment using Docker.
-3. `Machine Specification` describes the hardware and OS that were used for
+2. `Machine Specification` describes the hardware and OS that were used for
    producing the results in this artifact.
+3. `Horn Solvers` briefly introduces the Horn solvers used by our experiments.
 4. `Smoke Test` and `Bigger Smoke Test` describe how to test quickly
    whether the artifact works.
 5. `Reproducing the Experiments of the Paper` gives the required details
@@ -65,6 +66,16 @@ you get a different output, please increase the timeout.
 
 We have noticed that on Mac OSX these tests take from 3x to 5x longer than on
 the reference machine.
+
+# Horn Solvers
+
+The experiments below use two Horn solvers, z3/Spacer and Eldarica, in
+different configurations.  In the `docker` runs, which use the command line
+binaries of each solver, you will see counterexamples and invariants only from
+Eldarica outputs.  The features are provided when using z3/Spacer as well, but
+only with the C++ library, as presented in `Installation and Usage Outside the
+Docker Image`. That section shows counterexamples and invariants also from
+z3/Spacer.
 
 # Smoke Test
 
