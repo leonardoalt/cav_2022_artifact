@@ -321,8 +321,7 @@ tie, both solvers are considered winners.
 In order to reproduce Table 5 from the paper, the command above needs to
 be run for every subdirectory of `regression/`.  For ease of use and
 better visualization we provide automation for running and processing
-the results.  The scripts require the `matplotlib` library, available
-through `pip install matplotlib`.
+the results.
 
 ```
 $ ./docker_solcmc_regression_all
