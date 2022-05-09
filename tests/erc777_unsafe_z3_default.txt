@@ -75,4 +75,4 @@
 
 
 ####### Final solving and time report:
-Solver z3 did not solve in 6522.4696300029755ms
+Solver z3 did not solve in 16245.797899961472ms
